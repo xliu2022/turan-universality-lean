@@ -1,0 +1,14 @@
+def verifyMatch (challengeExportPath : System.FilePath) (solutionExportPath : System.FilePath) :
+    M Unit := do
+  verifyCompare
+  runKernels solutionExportPath
+where
+  verifyCompare : M Unit := do
+    let challenge ← LeanExport.parseStream <| .ofHandle (← IO.FS.Handle.mk challengeExportPath .read)
+    let solution ← LeanExport.parseStream <| .ofHandle (← IO.FS.Handle.mk solutionExportPath .read)
+    let theoremNames ← getTheoremNames
+    let definitionNames ← getDefinitionNames
+    let targets := (← getTheoremNames) ++ (← getLegalAxioms)
+    IO.ofExcept <| compareAt challenge solution targets definitionNames (← primitiveTargets)
+    IO.ofExcept <| checkAxioms solution theoremNames definitionNames (← getLegalAxioms)
+

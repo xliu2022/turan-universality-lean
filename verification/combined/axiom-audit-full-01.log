@@ -1,0 +1,62 @@
+TuranUniversality.Registry.main_theorem :
+  ∃ τ,
+    0 < τ ∧
+      τ < 1 ∧
+        (∃ m, 30 ≤ m ∧ m % 4 = 2 ∧ τ = TuranUniversality.Weighted.rationalThreshold ↑m) ∧
+          ∃ compiler,
+            Primrec compiler ∧
+              ∀ (w : List Bool),
+                1 ≤ (TuranUniversality.Effective.decodeGraph (compiler w)).edges.card ∧
+                  Filter.Tendsto
+                      (TuranUniversality.extremalDensity (TuranUniversality.Effective.decodeGraph (compiler w)))
+                      Filter.atTop
+                      (nhds (TuranUniversality.turanDensity (TuranUniversality.Effective.decodeGraph (compiler w)))) ∧
+                    (TuranUniversality.turanDensity (TuranUniversality.Effective.decodeGraph (compiler w)) = ↑τ ↔
+                        ¬TuranUniversality.Computation.WordHalts w) ∧
+                      (↑τ < TuranUniversality.turanDensity (TuranUniversality.Effective.decodeGraph (compiler w)) ↔
+                        TuranUniversality.Computation.WordHalts w)
+'TuranUniversality.Registry.main_theorem' depends on axioms: [propext, Classical.choice, Quot.sound]
+TuranUniversality.Registry.numerical_main_theorem :
+  ∃ τ,
+    0 < τ ∧
+      τ < 1 ∧
+        (∃ m, 30 ≤ m ∧ m % 4 = 2 ∧ τ = TuranUniversality.Weighted.rationalThreshold ↑m) ∧
+          ∃ single,
+            Primrec single ∧
+              ∃ families,
+                Primrec families ∧
+                  ∃ templates,
+                    Primrec templates ∧
+                      (∀ (w : List Bool),
+                          TuranUniversality.Effective.Uniform.decodeFamily 3 (families (3, w)) =
+                            {TuranUniversality.Effective.decodeGraphCode (single w)}) ∧
+                        ∀ (r : ℕ),
+                          3 ≤ r →
+                            have τr := TuranUniversality.Uniformity.densityScale r * τ;
+                            have K := TuranUniversality.Effective.Uniform.decode r (templates r);
+                            0 < τr ∧
+                              τr < 1 ∧
+                                0 < (templates r).1 ∧
+                                  (↑r.factorial * K.edgePolynomial fun x => (↑(templates r).1)⁻¹) = ↑τr ∧
+                                    (∀ (x : Fin (templates r).1 → ℝ),
+                                        TuranUniversality.ProbabilityWeights x →
+                                          ↑r.factorial * K.edgePolynomial x ≤ ↑τr) ∧
+                                      ∀ (w : List Bool),
+                                        have F := TuranUniversality.Effective.Uniform.decodeFamily r (families (r, w));
+                                        (∀ A ∈ F, 1 ≤ A.snd.edges.card) ∧
+                                          Filter.Tendsto (TuranUniversality.familyExtremalDensity F) Filter.atTop
+                                              (nhds (TuranUniversality.familyTuranDensity F)) ∧
+                                            TuranUniversality.familyTuranDensity F =
+                                                ↑(TuranUniversality.Uniformity.densityScale r) *
+                                                  TuranUniversality.turanDensity
+                                                    (TuranUniversality.Effective.decodeGraph (single w)) ∧
+                                              (TuranUniversality.familyTuranDensity F = ↑τr ↔
+                                                  ¬TuranUniversality.Computation.WordHalts w) ∧
+                                                (↑τr < TuranUniversality.familyTuranDensity F ↔
+                                                    TuranUniversality.Computation.WordHalts w) ∧
+                                                  TuranUniversality.familyHomFree F K ∧
+                                                    ∀ (sizes : Fin (templates r).1 → ℕ),
+                                                      TuranUniversality.familyFree F (K.blowup sizes)
+'TuranUniversality.Registry.numerical_main_theorem' depends on axioms: [propext, Classical.choice, Quot.sound]
+TuranUniversality.Registry.structural_main_theorem : TuranUniversality.Registry.structuralStatement
+'TuranUniversality.Registry.structural_main_theorem' depends on axioms: [propext, Classical.choice, Quot.sound]

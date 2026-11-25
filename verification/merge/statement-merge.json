@@ -1,0 +1,1316 @@
+{
+  "title": "Theorems 1.1–1.3 independent statement merge",
+  "formalization_author_and_maintainer": "Xizhi Liu",
+  "source_files": [
+    {
+      "file": "Challenge.lean",
+      "sha256": "13694829c53bc1bb7f8579009a383cf4cd778b36bd2e4b9caad669dbf27bbfdb",
+      "lines": 179
+    },
+    {
+      "file": "Challenge12.lean",
+      "sha256": "fc28eec29560afd692dbc4baec1a8a33bfc53bb339ba7a9079858061f79e6608",
+      "lines": 291
+    },
+    {
+      "file": "TuranUniversality/Palomar/Challenge13.lean",
+      "sha256": "54100d5f792b9b2a23d1c8ec5490ebc1085d95622945aafa263e42328ac7c8f8",
+      "lines": 405
+    },
+    {
+      "file": "Solution.lean",
+      "sha256": "82cc5367174c67c0a72cf3039dc1cc3301e45b6ff01fc3bf48c9632d745b0f47",
+      "lines": 27
+    },
+    {
+      "file": "Solution12.lean",
+      "sha256": "167c6a5d5c569e9a507d2ef16fa97e7a682395e58dd00535bb2af3f81e0eb6b1",
+      "lines": 38
+    },
+    {
+      "file": "TuranUniversality/Palomar/Solution13.lean",
+      "sha256": "2d8a1ec87699a4d0d4a6f8fa3d09c7784d351c61bb8edc81b0b3efdb7147e5f4",
+      "lines": 13
+    }
+  ],
+  "targets": [
+    {
+      "name": "TuranUniversality.Registry.main_theorem",
+      "challenge_source": "Challenge.lean",
+      "solution_source": "Solution.lean",
+      "challenge_declaration_preserved_byte_for_byte": true,
+      "solution_declaration_and_proof_preserved_byte_for_byte": true
+    },
+    {
+      "name": "TuranUniversality.Registry.numerical_main_theorem",
+      "challenge_source": "Challenge12.lean",
+      "solution_source": "Solution12.lean",
+      "challenge_declaration_preserved_byte_for_byte": true,
+      "solution_declaration_and_proof_preserved_byte_for_byte": true
+    },
+    {
+      "name": "TuranUniversality.Registry.structural_main_theorem",
+      "challenge_source": "TuranUniversality/Palomar/Challenge13.lean",
+      "solution_source": "TuranUniversality/Palomar/Solution13.lean",
+      "challenge_declaration_preserved_byte_for_byte": true,
+      "solution_declaration_and_proof_preserved_byte_for_byte": true
+    }
+  ],
+  "shared_declarations": [
+    {
+      "declaration": "TuranUniversality.RGraph",
+      "canonical_source": {
+        "file": "Challenge12.lean",
+        "lines": [
+          36,
+          38
+        ]
+      },
+      "target_lines": [
+        47,
+        49
+      ],
+      "canonical_preserved_byte_for_byte": true,
+      "other_original_occurrences": [
+        {
+          "file": "Challenge.lean",
+          "lines": [
+            40,
+            42
+          ],
+          "declaration_text_identical": true
+        },
+        {
+          "file": "TuranUniversality/Palomar/Challenge13.lean",
+          "lines": [
+            44,
+            46
+          ],
+          "declaration_text_identical": true
+        }
+      ]
+    },
+    {
+      "declaration": "TuranUniversality.RGraph.IsEmbedding",
+      "canonical_source": {
+        "file": "Challenge12.lean",
+        "lines": [
+          42,
+          45
+        ]
+      },
+      "target_lines": [
+        53,
+        56
+      ],
+      "canonical_preserved_byte_for_byte": true,
+      "other_original_occurrences": [
+        {
+          "file": "Challenge.lean",
+          "lines": [
+            46,
+            49
+          ],
+          "declaration_text_identical": true
+        },
+        {
+          "file": "TuranUniversality/Palomar/Challenge13.lean",
+          "lines": [
+            48,
+            51
+          ],
+          "declaration_text_identical": true
+        }
+      ]
+    },
+    {
+      "declaration": "TuranUniversality.RGraph.ext",
+      "canonical_source": {
+        "file": "Challenge12.lean",
+        "lines": [
+          51,
+          55
+        ]
+      },
+      "target_lines": [
+        62,
+        66
+      ],
+      "canonical_preserved_byte_for_byte": true,
+      "other_original_occurrences": [
+        {
+          "file": "TuranUniversality/Palomar/Challenge13.lean",
+          "lines": [
+            57,
+            61
+          ],
+          "declaration_text_identical": true
+        }
+      ]
+    },
+    {
+      "declaration": "TuranUniversality.RGraph [DecidableEq instance]",
+      "canonical_source": {
+        "file": "Challenge12.lean",
+        "lines": [
+          57,
+          59
+        ]
+      },
+      "target_lines": [
+        68,
+        70
+      ],
+      "canonical_preserved_byte_for_byte": true,
+      "other_original_occurrences": [
+        {
+          "file": "TuranUniversality/Palomar/Challenge13.lean",
+          "lines": [
+            63,
+            65
+          ],
+          "declaration_text_identical": true
+        }
+      ]
+    },
+    {
+      "declaration": "TuranUniversality.RGraph.IsHom",
+      "canonical_source": {
+        "file": "Challenge12.lean",
+        "lines": [
+          61,
+          62
+        ]
+      },
+      "target_lines": [
+        72,
+        73
+      ],
+      "canonical_preserved_byte_for_byte": true,
+      "other_original_occurrences": [
+        {
+          "file": "TuranUniversality/Palomar/Challenge13.lean",
+          "lines": [
+            169,
+            170
+          ],
+          "declaration_text_identical": true
+        }
+      ]
+    },
+    {
+      "declaration": "TuranUniversality.FiniteGraph",
+      "canonical_source": {
+        "file": "Challenge12.lean",
+        "lines": [
+          78,
+          78
+        ]
+      },
+      "target_lines": [
+        89,
+        89
+      ],
+      "canonical_preserved_byte_for_byte": true,
+      "other_original_occurrences": [
+        {
+          "file": "TuranUniversality/Palomar/Challenge13.lean",
+          "lines": [
+            73,
+            73
+          ],
+          "declaration_text_identical": true
+        }
+      ]
+    },
+    {
+      "declaration": "TuranUniversality.familyFree",
+      "canonical_source": {
+        "file": "Challenge12.lean",
+        "lines": [
+          80,
+          82
+        ]
+      },
+      "target_lines": [
+        91,
+        93
+      ],
+      "canonical_preserved_byte_for_byte": true,
+      "other_original_occurrences": [
+        {
+          "file": "TuranUniversality/Palomar/Challenge13.lean",
+          "lines": [
+            75,
+            77
+          ],
+          "declaration_text_identical": true
+        }
+      ]
+    },
+    {
+      "declaration": "TuranUniversality.ProbabilityWeights",
+      "canonical_source": {
+        "file": "Challenge12.lean",
+        "lines": [
+          93,
+          94
+        ]
+      },
+      "target_lines": [
+        104,
+        105
+      ],
+      "canonical_preserved_byte_for_byte": true,
+      "other_original_occurrences": [
+        {
+          "file": "TuranUniversality/Palomar/Challenge13.lean",
+          "lines": [
+            242,
+            243
+          ],
+          "declaration_text_identical": true
+        }
+      ]
+    },
+    {
+      "declaration": "TuranUniversality.extremalNumber",
+      "canonical_source": {
+        "file": "Challenge12.lean",
+        "lines": [
+          100,
+          103
+        ]
+      },
+      "target_lines": [
+        111,
+        114
+      ],
+      "canonical_preserved_byte_for_byte": true,
+      "other_original_occurrences": [
+        {
+          "file": "Challenge.lean",
+          "lines": [
+            55,
+            58
+          ],
+          "declaration_text_identical": true
+        },
+        {
+          "file": "TuranUniversality/Palomar/Challenge13.lean",
+          "lines": [
+            82,
+            85
+          ],
+          "declaration_text_identical": true
+        }
+      ]
+    },
+    {
+      "declaration": "TuranUniversality.extremalDensity",
+      "canonical_source": {
+        "file": "Challenge12.lean",
+        "lines": [
+          106,
+          107
+        ]
+      },
+      "target_lines": [
+        117,
+        118
+      ],
+      "canonical_preserved_byte_for_byte": true,
+      "other_original_occurrences": [
+        {
+          "file": "Challenge.lean",
+          "lines": [
+            61,
+            62
+          ],
+          "declaration_text_identical": true
+        },
+        {
+          "file": "TuranUniversality/Palomar/Challenge13.lean",
+          "lines": [
+            87,
+            88
+          ],
+          "declaration_text_identical": true
+        }
+      ]
+    },
+    {
+      "declaration": "TuranUniversality.turanDensity",
+      "canonical_source": {
+        "file": "Challenge12.lean",
+        "lines": [
+          111,
+          112
+        ]
+      },
+      "target_lines": [
+        122,
+        123
+      ],
+      "canonical_preserved_byte_for_byte": true,
+      "other_original_occurrences": [
+        {
+          "file": "Challenge.lean",
+          "lines": [
+            66,
+            67
+          ],
+          "declaration_text_identical": true
+        },
+        {
+          "file": "TuranUniversality/Palomar/Challenge13.lean",
+          "lines": [
+            90,
+            91
+          ],
+          "declaration_text_identical": true
+        }
+      ]
+    },
+    {
+      "declaration": "TuranUniversality.RGraph.IsEmbedding [Decidable instance]",
+      "canonical_source": {
+        "file": "Challenge12.lean",
+        "lines": [
+          118,
+          120
+        ]
+      },
+      "target_lines": [
+        129,
+        131
+      ],
+      "canonical_preserved_byte_for_byte": true,
+      "other_original_occurrences": [
+        {
+          "file": "TuranUniversality/Palomar/Challenge13.lean",
+          "lines": [
+            67,
+            69
+          ],
+          "declaration_text_identical": true
+        }
+      ]
+    },
+    {
+      "declaration": "TuranUniversality.RGraph.enumerate",
+      "canonical_source": {
+        "file": "Challenge12.lean",
+        "lines": [
+          129,
+          132
+        ]
+      },
+      "target_lines": [
+        140,
+        143
+      ],
+      "canonical_preserved_byte_for_byte": true,
+      "other_original_occurrences": [
+        {
+          "file": "TuranUniversality/Palomar/Challenge13.lean",
+          "lines": [
+            99,
+            102
+          ],
+          "declaration_text_identical": true
+        }
+      ]
+    },
+    {
+      "declaration": "TuranUniversality.RGraph.mem_enumerate",
+      "canonical_source": {
+        "file": "Challenge12.lean",
+        "lines": [
+          134,
+          138
+        ]
+      },
+      "target_lines": [
+        145,
+        149
+      ],
+      "canonical_preserved_byte_for_byte": true,
+      "other_original_occurrences": [
+        {
+          "file": "TuranUniversality/Palomar/Challenge13.lean",
+          "lines": [
+            104,
+            108
+          ],
+          "declaration_text_identical": true
+        }
+      ]
+    },
+    {
+      "declaration": "TuranUniversality.RGraph [Fintype instance]",
+      "canonical_source": {
+        "file": "Challenge12.lean",
+        "lines": [
+          140,
+          140
+        ]
+      },
+      "target_lines": [
+        151,
+        151
+      ],
+      "canonical_preserved_byte_for_byte": true,
+      "other_original_occurrences": [
+        {
+          "file": "TuranUniversality/Palomar/Challenge13.lean",
+          "lines": [
+            110,
+            110
+          ],
+          "declaration_text_identical": true
+        }
+      ]
+    },
+    {
+      "declaration": "TuranUniversality.familyFree [Decidable instance]",
+      "canonical_source": {
+        "file": "Challenge12.lean",
+        "lines": [
+          144,
+          146
+        ]
+      },
+      "target_lines": [
+        155,
+        157
+      ],
+      "canonical_preserved_byte_for_byte": true,
+      "other_original_occurrences": [
+        {
+          "file": "TuranUniversality/Palomar/Challenge13.lean",
+          "lines": [
+            114,
+            116
+          ],
+          "declaration_text_identical": true
+        }
+      ]
+    },
+    {
+      "declaration": "TuranUniversality.familyExtremalNumber",
+      "canonical_source": {
+        "file": "Challenge12.lean",
+        "lines": [
+          149,
+          152
+        ]
+      },
+      "target_lines": [
+        160,
+        163
+      ],
+      "canonical_preserved_byte_for_byte": true,
+      "other_original_occurrences": [
+        {
+          "file": "TuranUniversality/Palomar/Challenge13.lean",
+          "lines": [
+            120,
+            123
+          ],
+          "declaration_text_identical": true
+        }
+      ]
+    },
+    {
+      "declaration": "TuranUniversality.familyExtremalDensity",
+      "canonical_source": {
+        "file": "Challenge12.lean",
+        "lines": [
+          154,
+          155
+        ]
+      },
+      "target_lines": [
+        165,
+        166
+      ],
+      "canonical_preserved_byte_for_byte": true,
+      "other_original_occurrences": [
+        {
+          "file": "TuranUniversality/Palomar/Challenge13.lean",
+          "lines": [
+            125,
+            126
+          ],
+          "declaration_text_identical": true
+        }
+      ]
+    },
+    {
+      "declaration": "TuranUniversality.familyTuranDensity",
+      "canonical_source": {
+        "file": "Challenge12.lean",
+        "lines": [
+          157,
+          158
+        ]
+      },
+      "target_lines": [
+        168,
+        169
+      ],
+      "canonical_preserved_byte_for_byte": true,
+      "other_original_occurrences": [
+        {
+          "file": "TuranUniversality/Palomar/Challenge13.lean",
+          "lines": [
+            128,
+            129
+          ],
+          "declaration_text_identical": true
+        }
+      ]
+    },
+    {
+      "declaration": "TuranUniversality.Weighted.rationalThreshold",
+      "canonical_source": {
+        "file": "Challenge12.lean",
+        "lines": [
+          167,
+          173
+        ]
+      },
+      "target_lines": [
+        178,
+        184
+      ],
+      "canonical_preserved_byte_for_byte": true,
+      "other_original_occurrences": [
+        {
+          "file": "Challenge.lean",
+          "lines": [
+            76,
+            82
+          ],
+          "declaration_text_identical": true
+        }
+      ]
+    },
+    {
+      "declaration": "TuranUniversality.Effective.Triple",
+      "canonical_source": {
+        "file": "Challenge12.lean",
+        "lines": [
+          180,
+          180
+        ]
+      },
+      "target_lines": [
+        191,
+        191
+      ],
+      "canonical_preserved_byte_for_byte": true,
+      "other_original_occurrences": [
+        {
+          "file": "Challenge.lean",
+          "lines": [
+            89,
+            89
+          ],
+          "declaration_text_identical": true
+        },
+        {
+          "file": "TuranUniversality/Palomar/Challenge13.lean",
+          "lines": [
+            135,
+            135
+          ],
+          "declaration_text_identical": true
+        }
+      ]
+    },
+    {
+      "declaration": "TuranUniversality.Effective.GraphCode",
+      "canonical_source": {
+        "file": "Challenge12.lean",
+        "lines": [
+          184,
+          184
+        ]
+      },
+      "target_lines": [
+        195,
+        195
+      ],
+      "canonical_preserved_byte_for_byte": true,
+      "other_original_occurrences": [
+        {
+          "file": "Challenge.lean",
+          "lines": [
+            93,
+            93
+          ],
+          "declaration_text_identical": true
+        },
+        {
+          "file": "TuranUniversality/Palomar/Challenge13.lean",
+          "lines": [
+            136,
+            136
+          ],
+          "declaration_text_identical": true
+        }
+      ]
+    },
+    {
+      "declaration": "TuranUniversality.Effective.tripleSet",
+      "canonical_source": {
+        "file": "Challenge12.lean",
+        "lines": [
+          187,
+          187
+        ]
+      },
+      "target_lines": [
+        198,
+        198
+      ],
+      "canonical_preserved_byte_for_byte": true,
+      "other_original_occurrences": [
+        {
+          "file": "Challenge.lean",
+          "lines": [
+            96,
+            96
+          ],
+          "declaration_text_identical": true
+        },
+        {
+          "file": "TuranUniversality/Palomar/Challenge13.lean",
+          "lines": [
+            137,
+            137
+          ],
+          "declaration_text_identical": true
+        }
+      ]
+    },
+    {
+      "declaration": "TuranUniversality.Effective.decodeGraph",
+      "canonical_source": {
+        "file": "Challenge12.lean",
+        "lines": [
+          192,
+          197
+        ]
+      },
+      "target_lines": [
+        203,
+        208
+      ],
+      "canonical_preserved_byte_for_byte": true,
+      "other_original_occurrences": [
+        {
+          "file": "Challenge.lean",
+          "lines": [
+            101,
+            106
+          ],
+          "declaration_text_identical": true
+        },
+        {
+          "file": "TuranUniversality/Palomar/Challenge13.lean",
+          "lines": [
+            139,
+            142
+          ],
+          "declaration_text_identical": false
+        }
+      ],
+      "difference": "The structural source uses equation-style uniformity proof syntax; the canonical declaration retains the original Challenge12 proof text. The edges and uniformity proposition are unchanged. Elaborated comparison is a separate verification step."
+    },
+    {
+      "declaration": "TuranUniversality.Effective.decodeGraphCode",
+      "canonical_source": {
+        "file": "Challenge12.lean",
+        "lines": [
+          199,
+          199
+        ]
+      },
+      "target_lines": [
+        210,
+        210
+      ],
+      "canonical_preserved_byte_for_byte": true,
+      "other_original_occurrences": [
+        {
+          "file": "TuranUniversality/Palomar/Challenge13.lean",
+          "lines": [
+            144,
+            144
+          ],
+          "declaration_text_identical": true
+        }
+      ]
+    },
+    {
+      "declaration": "TuranUniversality.Effective.Uniform.Code",
+      "canonical_source": {
+        "file": "Challenge12.lean",
+        "lines": [
+          204,
+          204
+        ]
+      },
+      "target_lines": [
+        215,
+        215
+      ],
+      "canonical_preserved_byte_for_byte": true,
+      "other_original_occurrences": [
+        {
+          "file": "TuranUniversality/Palomar/Challenge13.lean",
+          "lines": [
+            148,
+            148
+          ],
+          "declaration_text_identical": true
+        }
+      ]
+    },
+    {
+      "declaration": "TuranUniversality.Effective.Uniform.decode",
+      "canonical_source": {
+        "file": "Challenge12.lean",
+        "lines": [
+          206,
+          211
+        ]
+      },
+      "target_lines": [
+        217,
+        222
+      ],
+      "canonical_preserved_byte_for_byte": true,
+      "other_original_occurrences": [
+        {
+          "file": "TuranUniversality/Palomar/Challenge13.lean",
+          "lines": [
+            150,
+            153
+          ],
+          "declaration_text_identical": false
+        }
+      ],
+      "difference": "The structural source uses equation-style uniformity proof syntax; the canonical declaration retains the original Challenge12 proof text. The edges and uniformity proposition are unchanged. Elaborated comparison is a separate verification step."
+    },
+    {
+      "declaration": "TuranUniversality.Effective.Uniform.decodeFinite",
+      "canonical_source": {
+        "file": "Challenge12.lean",
+        "lines": [
+          213,
+          213
+        ]
+      },
+      "target_lines": [
+        224,
+        224
+      ],
+      "canonical_preserved_byte_for_byte": true,
+      "other_original_occurrences": [
+        {
+          "file": "TuranUniversality/Palomar/Challenge13.lean",
+          "lines": [
+            155,
+            155
+          ],
+          "declaration_text_identical": true
+        }
+      ]
+    },
+    {
+      "declaration": "TuranUniversality.Effective.Uniform.decodeFamily",
+      "canonical_source": {
+        "file": "Challenge12.lean",
+        "lines": [
+          215,
+          217
+        ]
+      },
+      "target_lines": [
+        226,
+        228
+      ],
+      "canonical_preserved_byte_for_byte": true,
+      "other_original_occurrences": [
+        {
+          "file": "TuranUniversality/Palomar/Challenge13.lean",
+          "lines": [
+            157,
+            159
+          ],
+          "declaration_text_identical": true
+        }
+      ]
+    },
+    {
+      "declaration": "TuranUniversality.Computation.BinaryWord",
+      "canonical_source": {
+        "file": "Challenge12.lean",
+        "lines": [
+          227,
+          227
+        ]
+      },
+      "target_lines": [
+        238,
+        238
+      ],
+      "canonical_preserved_byte_for_byte": true,
+      "other_original_occurrences": [
+        {
+          "file": "Challenge.lean",
+          "lines": [
+            115,
+            115
+          ],
+          "declaration_text_identical": true
+        },
+        {
+          "file": "TuranUniversality/Palomar/Challenge13.lean",
+          "lines": [
+            304,
+            304
+          ],
+          "declaration_text_identical": true
+        }
+      ]
+    },
+    {
+      "declaration": "TuranUniversality.Computation.binaryValue",
+      "canonical_source": {
+        "file": "Challenge12.lean",
+        "lines": [
+          231,
+          232
+        ]
+      },
+      "target_lines": [
+        242,
+        243
+      ],
+      "canonical_preserved_byte_for_byte": true,
+      "other_original_occurrences": [
+        {
+          "file": "Challenge.lean",
+          "lines": [
+            119,
+            120
+          ],
+          "declaration_text_identical": true
+        },
+        {
+          "file": "TuranUniversality/Palomar/Challenge13.lean",
+          "lines": [
+            308,
+            309
+          ],
+          "declaration_text_identical": true
+        }
+      ]
+    },
+    {
+      "declaration": "TuranUniversality.Computation.decodeProgram",
+      "canonical_source": {
+        "file": "Challenge12.lean",
+        "lines": [
+          236,
+          237
+        ]
+      },
+      "target_lines": [
+        247,
+        248
+      ],
+      "canonical_preserved_byte_for_byte": true,
+      "other_original_occurrences": [
+        {
+          "file": "Challenge.lean",
+          "lines": [
+            124,
+            125
+          ],
+          "declaration_text_identical": true
+        },
+        {
+          "file": "TuranUniversality/Palomar/Challenge13.lean",
+          "lines": [
+            313,
+            314
+          ],
+          "declaration_text_identical": true
+        }
+      ]
+    },
+    {
+      "declaration": "TuranUniversality.Computation.inputEnabled",
+      "canonical_source": {
+        "file": "Challenge12.lean",
+        "lines": [
+          241,
+          241
+        ]
+      },
+      "target_lines": [
+        252,
+        252
+      ],
+      "canonical_preserved_byte_for_byte": true,
+      "other_original_occurrences": [
+        {
+          "file": "Challenge.lean",
+          "lines": [
+            129,
+            129
+          ],
+          "declaration_text_identical": true
+        },
+        {
+          "file": "TuranUniversality/Palomar/Challenge13.lean",
+          "lines": [
+            318,
+            318
+          ],
+          "declaration_text_identical": true
+        }
+      ]
+    },
+    {
+      "declaration": "TuranUniversality.Computation.wordEval",
+      "canonical_source": {
+        "file": "Challenge12.lean",
+        "lines": [
+          245,
+          246
+        ]
+      },
+      "target_lines": [
+        256,
+        257
+      ],
+      "canonical_preserved_byte_for_byte": true,
+      "other_original_occurrences": [
+        {
+          "file": "Challenge.lean",
+          "lines": [
+            133,
+            134
+          ],
+          "declaration_text_identical": true
+        },
+        {
+          "file": "TuranUniversality/Palomar/Challenge13.lean",
+          "lines": [
+            322,
+            323
+          ],
+          "declaration_text_identical": true
+        }
+      ]
+    },
+    {
+      "declaration": "TuranUniversality.Computation.WordHalts",
+      "canonical_source": {
+        "file": "Challenge12.lean",
+        "lines": [
+          249,
+          249
+        ]
+      },
+      "target_lines": [
+        260,
+        260
+      ],
+      "canonical_preserved_byte_for_byte": true,
+      "other_original_occurrences": [
+        {
+          "file": "Challenge.lean",
+          "lines": [
+            137,
+            137
+          ],
+          "declaration_text_identical": true
+        },
+        {
+          "file": "TuranUniversality/Palomar/Challenge13.lean",
+          "lines": [
+            326,
+            326
+          ],
+          "declaration_text_identical": true
+        }
+      ]
+    }
+  ],
+  "challenge_provenance_segments": [
+    {
+      "source_file": "TuranUniversality/Palomar/Challenge13.lean",
+      "source_lines": [
+        1,
+        14
+      ],
+      "target_file": "Challenge.lean",
+      "target_lines": [
+        1,
+        14
+      ],
+      "copied_byte_for_byte": true,
+      "purpose": "Union of all three original Mathlib import lists; no proof-project import.",
+      "segment_sha256": "c395cd2c0b388eb7d4806d53ddffff59a26eec5855f98ce2da9083dda6f238eb"
+    },
+    {
+      "source_file": null,
+      "target_file": "Challenge.lean",
+      "target_lines": [
+        15,
+        40
+      ],
+      "purpose": "Combined title, attribution, scope, placeholder policy and notation scopes."
+    },
+    {
+      "source_file": "Challenge12.lean",
+      "source_lines": [
+        30,
+        258
+      ],
+      "target_file": "Challenge.lean",
+      "target_lines": [
+        41,
+        269
+      ],
+      "copied_byte_for_byte": true,
+      "purpose": "All shared and numerical definitions, retaining exact instance implementations.",
+      "segment_sha256": "0eace52d0e5af634bf4e735ccae91fdbdb2651291a1500dd503981c55439302d"
+    },
+    {
+      "source_file": "TuranUniversality/Palomar/Challenge13.lean",
+      "source_lines": [
+        165,
+        168
+      ],
+      "target_file": "Challenge.lean",
+      "target_lines": [
+        270,
+        273
+      ],
+      "copied_byte_for_byte": true,
+      "purpose": "Structural homomorphism context.",
+      "segment_sha256": "146d2eb985051e39609e059c5c9a90842367e676f4eb9da5464a244868d04a1c"
+    },
+    {
+      "source_file": "TuranUniversality/Palomar/Challenge13.lean",
+      "source_lines": [
+        172,
+        241
+      ],
+      "target_file": "Challenge.lean",
+      "target_lines": [
+        274,
+        343
+      ],
+      "copied_byte_for_byte": true,
+      "purpose": "Structural densities and limit profiles; omit duplicate RGraph.IsHom.",
+      "segment_sha256": "305b57337db70f46c6700f95403d40886c19334c72f77d53bf3ed5e5953091bd"
+    },
+    {
+      "source_file": "TuranUniversality/Palomar/Challenge13.lean",
+      "source_lines": [
+        245,
+        298
+      ],
+      "target_file": "Challenge.lean",
+      "target_lines": [
+        344,
+        397
+      ],
+      "copied_byte_for_byte": true,
+      "purpose": "Weighted role patterns and finite rounding; omit duplicate ProbabilityWeights.",
+      "segment_sha256": "94eb674b67f9da3034e4a9b5b56797b562e01b2c4a5cc335e592dca0b6e303eb"
+    },
+    {
+      "source_file": "Challenge12.lean",
+      "source_lines": [
+        259,
+        260
+      ],
+      "target_file": "Challenge.lean",
+      "target_lines": [
+        398,
+        399
+      ],
+      "copied_byte_for_byte": true,
+      "purpose": "Open Registry once for the first two target declarations.",
+      "segment_sha256": "087c5d57506b233400d2119cc68e210d8b56c80a074c89251bbe5dd8f5659c50"
+    },
+    {
+      "source_file": "Challenge.lean",
+      "source_lines": [
+        143,
+        159
+      ],
+      "target_file": "Challenge.lean",
+      "target_lines": [
+        400,
+        416
+      ],
+      "copied_byte_for_byte": true,
+      "purpose": "Original Theorem 1.1 named proposition, unchanged.",
+      "segment_sha256": "9922d6e73e7c7b777f2918aeaef9d5249b19f8521e71c7e769ac8dc627220fe5"
+    },
+    {
+      "source_file": null,
+      "target_file": "Challenge.lean",
+      "target_lines": [
+        417,
+        418
+      ],
+      "purpose": "Update single-target prose for the combined Challenge."
+    },
+    {
+      "source_file": "Challenge.lean",
+      "source_lines": [
+        164,
+        177
+      ],
+      "target_file": "Challenge.lean",
+      "target_lines": [
+        419,
+        432
+      ],
+      "copied_byte_for_byte": true,
+      "purpose": "Original Theorem 1.1 target declaration and deliberate placeholder, unchanged.",
+      "segment_sha256": "867288b5d13d0dc88de23cb3b893d1e7aaa14c48934683af0ffb0aedfd1bee38"
+    },
+    {
+      "source_file": "Challenge12.lean",
+      "source_lines": [
+        261,
+        291
+      ],
+      "target_file": "Challenge.lean",
+      "target_lines": [
+        433,
+        463
+      ],
+      "copied_byte_for_byte": true,
+      "purpose": "Original Theorem 1.2 target declaration and deliberate placeholder, unchanged.",
+      "segment_sha256": "0694d136bf1e628745153354961bcadf2d7b9e448d65e98f9f181813bc9ab2fa"
+    },
+    {
+      "source_file": null,
+      "target_file": "Challenge.lean",
+      "target_lines": [
+        464,
+        464
+      ],
+      "purpose": "Separate namespace blocks."
+    },
+    {
+      "source_file": "TuranUniversality/Palomar/Challenge13.lean",
+      "source_lines": [
+        332,
+        405
+      ],
+      "target_file": "Challenge.lean",
+      "target_lines": [
+        465,
+        538
+      ],
+      "copied_byte_for_byte": true,
+      "purpose": "Exact structural definitions, quantifiers, stability, phases and Theorem 1.3 target.",
+      "segment_sha256": "e60c6e6f3d5b44ae324a41782c7eb741853a7337008f1118fb652767b9f02075"
+    }
+  ],
+  "solution_provenance_segments": [
+    {
+      "source_file": "Solution.lean",
+      "source_lines": [
+        11,
+        25
+      ],
+      "target_file": "Solution.lean",
+      "target_lines": [
+        21,
+        36
+      ],
+      "theorem_declaration_and_proof_copied_byte_for_byte": true,
+      "comment_updated": false
+    },
+    {
+      "source_file": "Solution12.lean",
+      "source_lines": [
+        11,
+        36
+      ],
+      "target_file": "Solution.lean",
+      "target_lines": [
+        37,
+        63
+      ],
+      "theorem_declaration_and_proof_copied_byte_for_byte": true,
+      "comment_updated": false
+    },
+    {
+      "source_file": "TuranUniversality/Palomar/Solution13.lean",
+      "source_lines": [
+        9,
+        11
+      ],
+      "target_file": "Solution.lean",
+      "target_lines": [
+        64,
+        67
+      ],
+      "theorem_declaration_and_proof_copied_byte_for_byte": true,
+      "comment_updated": true
+    }
+  ],
+  "source_checks": {
+    "target_declarations_preserved": true,
+    "challenge_imports_only_mathlib": true,
+    "challenge_target_placeholders": 3,
+    "solution_placeholder_or_custom_axiom_commands": 0,
+    "definition_names": [],
+    "permitted_axioms": [
+      "propext",
+      "Quot.sound",
+      "Classical.choice"
+    ],
+    "new_proof_limit_or_linter_options": 0
+  },
+  "verification_boundary": "This report records source-level construction and exact-copy checks only. It does not claim a Lean build, elaborated Comparator check, or kernel validation. Those are run centrally and recorded separately in the final package.",
+  "mathematical_boundary": "The three original existential thresholds and compilers remain separately quantified; the merge does not claim a new shared-witness theorem. Theorem 1.4 and other extensions are outside this submission.",
+  "outputs": [
+    {
+      "file": "Challenge.lean",
+      "sha256": "1a3a6f603600e00bad39e17d635638e10601dd7d316f16af5d7e64178ea121f1",
+      "bytes": 21767,
+      "lines": 538
+    },
+    {
+      "file": "Solution.lean",
+      "sha256": "11eba52fd9b074a6f7246ed94503041ac2ec3157ccee40e169083c5920fa4bd8",
+      "bytes": 3388,
+      "lines": 68
+    },
+    {
+      "file": "comparator.json",
+      "sha256": "281b74997761bf918d5e70581a11c907ad77aa1f6dc98fec0742d98861c8243d",
+      "bytes": 369,
+      "lines": 15
+    }
+  ]
+}

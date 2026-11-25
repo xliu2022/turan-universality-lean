@@ -1,0 +1,21 @@
+{
+  "command": [
+    "lake",
+    "build"
+  ],
+  "cwd": "/workspace/scratch/ec525e9616f4/palomar-universality-123/turan-universality-lean",
+  "lean_num_threads": 2,
+  "source_snapshot": "verification/combined/build-01-sources.json",
+  "source_snapshot_sha256": "ee1e578c6bbfb41b6b510aad80985ae9bf848763de588f205b815fba7b6bd655",
+  "started_utc": "2026-11-25T05:52:20.874085+00:00",
+  "timeout_seconds": 1200,
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 29.602,
+  "user_seconds": 24.197,
+  "system_seconds": 11.714,
+  "maximum_rss_kib": 2940368,
+  "finished_utc": "2026-11-25T05:52:50.476116+00:00",
+  "log": "verification/combined/build-01.log",
+  "log_sha256": "d2c90c495888499521e9f83dd16701f47648c60adcb7f31f62a8441f12cc1190"
+}

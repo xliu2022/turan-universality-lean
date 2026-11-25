@@ -1,0 +1,18 @@
+[
+  {
+    "file": "proof-exports/challenge.ndjson.gz",
+    "bytes": 7344044,
+    "sha256": "95fe8ca8debc9435258693b8c0c97193b4d9a62c3bd8517814247cbf3fbd4e1c",
+    "uncompressed_file": ".verification-work/challenge.ndjson",
+    "uncompressed_bytes": 44596260,
+    "uncompressed_sha256": "2a68126023363447140d50874526b5ab94a09df569df9f9d74d935737480a301"
+  },
+  {
+    "file": "proof-exports/solution.ndjson.gz",
+    "bytes": 38408288,
+    "sha256": "143a948326bdf871029bc4f2069f5cc3007e9ab70fb8b47b50a31b63481eed73",
+    "uncompressed_file": ".verification-work/solution.ndjson",
+    "uncompressed_bytes": 236462714,
+    "uncompressed_sha256": "2660318da2afd01adbbf4bab64bf77c2c8474e805b87229b25a61db48241b796"
+  }
+]

@@ -1,0 +1,15 @@
+{
+  "challenge_module": "Challenge",
+  "solution_module": "Solution",
+  "theorem_names": [
+    "TuranUniversality.Registry.main_theorem",
+    "TuranUniversality.Registry.numerical_main_theorem",
+    "TuranUniversality.Registry.structural_main_theorem"
+  ],
+  "definition_names": [],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

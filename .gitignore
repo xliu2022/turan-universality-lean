@@ -1,0 +1,10 @@
+.lake/
+.verification-work/
+proof-exports/
+*.olean
+*.olean.*
+*.ilean
+*.ir
+*.trace
+__pycache__/
+.DS_Store

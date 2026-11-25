@@ -1,0 +1,27 @@
+Turan Universality formalization
+
+Mathematical source:
+Heng Li and Xizhi Liu, "Turing universality, computability, and incompleteness
+in hypergraph Turan theory", uploaded V4 research manuscript.
+The manuscript files in source/ retain their authors' rights; the repository's
+Apache-2.0 license applies to the formalization code.
+
+Reused formalization:
+TuranUniversality/Hypergraph/Basic.lean and
+TuranUniversality/Density/Extremal.lean are adapted from
+https://github.com/xliu2022/improved-sidorenko-lean
+at commit ba6f109bf01436ca15e55fdf5d35dbea85ffd9c9 (Apache-2.0).
+The adaptation changes project namespaces and import paths.
+
+Dependencies retain their original licenses.
+
+Metadata schema:
+verification/policy/formalization-v0.4.schema.json is an unmodified copy from
+https://github.com/mathlib-initiative/formalization.yaml (Apache-2.0),
+Git blob 19f4a46a1bc0e4798dca7bcb7ed57281b1c8c996.
+The same Apache-2.0 license text is provided in LICENSE.
+
+Verification script provenance:
+scripts/verify-comparator.sh is adapted from PalomarRegistry/PalomarTemplate
+at 2891de4c48955af824969a263d31b25e7a9a1406 (Apache-2.0); the original is
+preserved at verification/template/verify-comparator-original.sh.

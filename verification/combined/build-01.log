@@ -1,0 +1,2546 @@
+⚠ [825/872] Replayed TuranUniversality.Effective.ListOperations
+warning: TuranUniversality/Effective/ListOperations.lean:22:8: automatically included section variable(s) unused in theorem `TuranUniversality.Effective.mem_cartesian`:
+  [Primcodable A]
+  [Primcodable B]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Primcodable A] [Primcodable B] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [8980/9355] Replayed TuranUniversality.Density.WeightedSampling
+warning: TuranUniversality/Density/WeightedSampling.lean:102:0: automatically included section variable(s) unused in theorem `TuranUniversality.RGraph.orderingFunction_weight`:
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [8984/9355] Replayed TuranUniversality.Hypergraph.Clique
+warning: TuranUniversality/Hypergraph/Clique.lean:16:10: Variable name `e` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _e
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [8990/9355] Replayed TuranUniversality.Hypergraph.WeightTransport
+warning: TuranUniversality/Hypergraph/WeightTransport.lean:20:0: automatically included section variable(s) unused in theorem `TuranUniversality.pushWeights_nonneg`:
+  [DecidableEq V]
+  [Fintype W]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq V] [Fintype W] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Hypergraph/WeightTransport.lean:28:0: automatically included section variable(s) unused in theorem `TuranUniversality.pushWeights_sum`:
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Hypergraph/WeightTransport.lean:38:0: automatically included section variable(s) unused in theorem `TuranUniversality.pushWeights_apply`:
+  [Fintype W]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype W] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [8993/9355] Replayed TuranUniversality.Hypergraph.PartialRooting
+warning: TuranUniversality/Hypergraph/PartialRooting.lean:72:19: Variable name `a` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _a
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: TuranUniversality/Hypergraph/PartialRooting.lean:72:21: Variable name `b` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _b
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [8996/9355] Replayed TuranUniversality.Effective.BasisEncoding
+warning: TuranUniversality/Effective/BasisEncoding.lean:27:0: automatically included section variable(s) unused in theorem `TuranUniversality.Effective.filteredGraphCodes_decode`:
+  [Primcodable A]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Primcodable A] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [9001/9355] Replayed TuranUniversality.Uniformity.Suspension
+warning: TuranUniversality/Uniformity/Suspension.lean:26:0: automatically included section variable(s) unused in theorem `TuranUniversality.RGraph.suspendEdge_disjoint`:
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [9003/9355] Replayed TuranUniversality.Uniformity.MassOptimization
+warning: TuranUniversality/Uniformity/MassOptimization.lean:147:8: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: TuranUniversality/Uniformity/MassOptimization.lean:147:8: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: TuranUniversality/Uniformity/MassOptimization.lean:158:2: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [9007/9355] Replayed TuranUniversality.Structural.BlockSupports
+warning: TuranUniversality/Structural/BlockSupports.lean:23:26: Variable name `i` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _i
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [9008/9355] Replayed TuranUniversality.Structural.CodeWords
+warning: TuranUniversality/Structural/CodeWords.lean:265:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [9011/9355] Replayed TuranUniversality.Structural.OuterWeights
+warning: TuranUniversality/Structural/OuterWeights.lean:53:44: `isCompact_stdSimplex` has been deprecated: Use `Convexity.StdSimplex.compactSpace` instead
+
+Note: The updated constant has a different type:
+  ∀ (R : Type u_1) (M : Type u_2) [inst : Ring R] [inst_1 : TopologicalSpace R] [IsTopologicalRing R]
+    [inst_3 : PartialOrder R] [inst_4 : IsStrictOrderedRing R] [CompactIccSpace R] [OrderClosedTopology R] [Finite M],
+    CompactSpace (Convexity.StdSimplex R M)
+instead of
+  ∀ (𝕜 : Type u_1) (ι : Type u_2) [inst : Fintype ι] [inst_1 : TopologicalSpace 𝕜] [inst_2 : Semiring 𝕜]
+    [inst_3 : PartialOrder 𝕜] [OrderClosedTopology 𝕜] [ContinuousAdd 𝕜] [CompactIccSpace 𝕜] [IsOrderedAddMonoid 𝕜],
+    IsCompact (stdSimplex 𝕜 ι)
+warning: TuranUniversality/Structural/OuterWeights.lean:124:17: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: TuranUniversality/Structural/OuterWeights.lean:124:17: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+⚠ [9012/9355] Replayed TuranUniversality.Structural.PentagonDefect
+warning: TuranUniversality/Structural/PentagonDefect.lean:105:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: TuranUniversality/Structural/PentagonDefect.lean:150:50: Variable name `hx` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hx
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: TuranUniversality/Structural/PentagonDefect.lean:175:44: `isCompact_stdSimplex` has been deprecated: Use `Convexity.StdSimplex.compactSpace` instead
+
+Note: The updated constant has a different type:
+  ∀ (R : Type u_1) (M : Type u_2) [inst : Ring R] [inst_1 : TopologicalSpace R] [IsTopologicalRing R]
+    [inst_3 : PartialOrder R] [inst_4 : IsStrictOrderedRing R] [CompactIccSpace R] [OrderClosedTopology R] [Finite M],
+    CompactSpace (Convexity.StdSimplex R M)
+instead of
+  ∀ (𝕜 : Type u_1) (ι : Type u_2) [inst : Fintype ι] [inst_1 : TopologicalSpace 𝕜] [inst_2 : Semiring 𝕜]
+    [inst_3 : PartialOrder 𝕜] [OrderClosedTopology 𝕜] [ContinuousAdd 𝕜] [CompactIccSpace 𝕜] [IsOrderedAddMonoid 𝕜],
+    IsCompact (stdSimplex 𝕜 ι)
+⚠ [9013/9355] Replayed TuranUniversality.Hypergraph.Lagrangian
+warning: TuranUniversality/Hypergraph/Lagrangian.lean:23:0: automatically included section variable(s) unused in theorem `TuranUniversality.ProbabilityWeights.apply_le_one`:
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [9015/9355] Replayed TuranUniversality.Hypergraph.Twins
+warning: TuranUniversality/Hypergraph/Twins.lean:95:6: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: TuranUniversality/Hypergraph/Twins.lean:105:23: This simp argument is unused:
+  and_left_comm
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [d, hw, and_assoc]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [9017/9355] Replayed TuranUniversality.Structural.CubeSymmetry
+warning: TuranUniversality/Structural/CubeSymmetry.lean:64:4: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp at hb
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+⚠ [9020/9355] Replayed TuranUniversality.Hypergraph.PartitionRounding
+warning: TuranUniversality/Hypergraph/PartitionRounding.lean:31:0: automatically included section variable(s) unused in theorem `TuranUniversality.PartitionRounding.sum_fiberSize`:
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Hypergraph/PartitionRounding.lean:35:0: automatically included section variable(s) unused in theorem `TuranUniversality.PartitionRounding.exists_fiberSize`:
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [9021/9355] Replayed TuranUniversality.Hypergraph.PartitionCounts
+warning: TuranUniversality/Hypergraph/PartitionCounts.lean:35:4: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: TuranUniversality/Hypergraph/PartitionCounts.lean:56:4: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: TuranUniversality/Hypergraph/PartitionCounts.lean:61:52: `if_true` has been deprecated: Use `ite_true` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵t̵r̵u̵e̵i̲t̲e̲_̲t̲r̲u̲e̲
+warning: TuranUniversality/Hypergraph/PartitionCounts.lean:70:20: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: TuranUniversality/Hypergraph/PartitionCounts.lean:142:17: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: TuranUniversality/Hypergraph/PartitionCounts.lean:145:17: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: TuranUniversality/Hypergraph/PartitionCounts.lean:161:17: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: TuranUniversality/Hypergraph/PartitionCounts.lean:161:28: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: TuranUniversality/Hypergraph/PartitionCounts.lean:163:20: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+⚠ [9023/9355] Replayed TuranUniversality.Computation.MatchingSystem
+warning: TuranUniversality/Computation/MatchingSystem.lean:45:0: automatically included section variable(s) unused in theorem `TuranUniversality.Computation.MatchingSystem.Realization.pair_left_unique`:
+  [DecidableEq D]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq D] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Computation/MatchingSystem.lean:49:0: automatically included section variable(s) unused in theorem `TuranUniversality.Computation.MatchingSystem.Realization.pair_right_unique`:
+  [DecidableEq D]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq D] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Computation/MatchingSystem.lean:123:0: automatically included section variable(s) unused in theorem `TuranUniversality.Computation.MatchingSystem.path_mono`:
+  [DecidableEq D]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq D] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [9036/9355] Replayed TuranUniversality.Computation.Pullback
+warning: TuranUniversality/Computation/Pullback.lean:94:0: automatically included section variable(s) unused in theorem `TuranUniversality.Computation.MatchingSystem.Realization.Pullback.q1`:
+  [DecidableEq Alphabet]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq Alphabet] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [9038/9355] Replayed TuranUniversality.Construction.BlockCodes
+warning: TuranUniversality/Construction/BlockCodes.lean:28:8: automatically included section variable(s) unused in theorem `TuranUniversality.Construction.bipartitePair_left`:
+  [Fintype A]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype A] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Construction/BlockCodes.lean:33:8: automatically included section variable(s) unused in theorem `TuranUniversality.Construction.bipartitePair_right`:
+  [Fintype A]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype A] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Construction/BlockCodes.lean:120:0: automatically included section variable(s) unused in theorem `TuranUniversality.Construction.card_blockRoots`:
+  [DecidableEq B]
+  [∀ (b : B), NeZero (n b)]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq B] [∀ (b : B), NeZero (n b)] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Construction/BlockCodes.lean:138:0: automatically included section variable(s) unused in theorem `TuranUniversality.Construction.blockFiber_card`:
+  [∀ (b : B), NeZero (n b)]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [∀ (b : B), NeZero (n b)] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [9041/9355] Replayed TuranUniversality.Density.CliqueBound
+warning: TuranUniversality/Density/CliqueBound.lean:105:0: automatically included section variable(s) unused in theorem `TuranUniversality.RGraph.edgePolynomial_div`:
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [9042/9355] Replayed TuranUniversality.Hypergraph.Guard
+warning: TuranUniversality/Hypergraph/Guard.lean:98:18: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+⚠ [9049/9355] Replayed TuranUniversality.Uniformity.Admissible
+warning: TuranUniversality/Uniformity/Admissible.lean:27:8: Variable name `e` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _e
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: TuranUniversality/Uniformity/Admissible.lean:43:0: automatically included section variable(s) unused in theorem `TuranUniversality.RGraph.IsCore.sdiff_card`:
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Uniformity/Admissible.lean:74:0: automatically included section variable(s) unused in theorem `TuranUniversality.RGraph.exists_pullback_edge`:
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Uniformity/Admissible.lean:143:0: automatically included section variable(s) unused in theorem `TuranUniversality.Uniformity.Admissible.edgeless`:
+  [Fintype X]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype X] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Uniformity/Admissible.lean:148:0: automatically included section variable(s) unused in theorem `TuranUniversality.Uniformity.Admissible.of_embedding`:
+  [Fintype X]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype X] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [9050/9355] Replayed TuranUniversality.Uniformity.Extensions
+warning: TuranUniversality/Uniformity/Extensions.lean:73:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [9052/9355] Replayed TuranUniversality.Uniformity.Transfer
+warning: TuranUniversality/Uniformity/Transfer.lean:73:0: automatically included section variable(s) unused in theorem `TuranUniversality.Uniformity.Admissible.suspension`:
+  [Fintype X]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype X] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [9053/9355] Replayed TuranUniversality.Structural.Record
+warning: TuranUniversality/Structural/Record.lean:89:4: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp [h] at he
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: TuranUniversality/Structural/Record.lean:90:4: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp [h] at hf
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+⚠ [9056/9355] Replayed TuranUniversality.Structural.CommonLink
+warning: TuranUniversality/Structural/CommonLink.lean:53:8: automatically included section variable(s) unused in theorem `_private.TuranUniversality.Structural.CommonLink.0.TuranUniversality.Structural.RecordSystem.anchor_pair_size`:
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [9062/9355] Replayed TuranUniversality.Structural.CodePools
+warning: TuranUniversality/Structural/CodePools.lean:140:14: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: TuranUniversality/Structural/CodePools.lean:150:14: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: TuranUniversality/Structural/CodePools.lean:150:45: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: TuranUniversality/Structural/CodePools.lean:181:12: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+⚠ [9063/9355] Replayed TuranUniversality.Density.WeightedHom
+warning: TuranUniversality/Density/WeightedHom.lean:69:27: This simp argument is unused:
+  Fintype.card_fun
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Finset.prod_const, ← Finset.mul_sum, div_eq_mul_inv, mul_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [9064/9355] Replayed TuranUniversality.Density.WeightedHomPushforward
+warning: TuranUniversality/Density/WeightedHomPushforward.lean:87:10: Variable name `e` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _e
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [9066/9355] Replayed TuranUniversality.Hypergraph.Clone
+warning: TuranUniversality/Hypergraph/Clone.lean:57:8: automatically included section variable(s) unused in theorem `TuranUniversality.RGraph.cloneMap_self`:
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Hypergraph/Clone.lean:59:8: automatically included section variable(s) unused in theorem `TuranUniversality.RGraph.cloneMap_other`:
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [9068/9355] Replayed TuranUniversality.Density.WeightedCollisions
+warning: TuranUniversality/Density/WeightedCollisions.lean:25:0: automatically included section variable(s) unused in theorem `TuranUniversality.Density.sum_productWeight_mass`:
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [9073/9355] Replayed TuranUniversality.Density.WeightedHomCoupling
+warning: TuranUniversality/Density/WeightedHomCoupling.lean:87:6: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp [hg, hh]
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+⚠ [9076/9355] Replayed TuranUniversality.Effective.MatchingEncoding
+warning: TuranUniversality/Effective/MatchingEncoding.lean:90:0: automatically included section variable(s) unused in theorem `TuranUniversality.Effective.MatchingCode.h_bound`:
+  [Primcodable Alphabet]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Primcodable Alphabet] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Effective/MatchingEncoding.lean:95:0: automatically included section variable(s) unused in theorem `TuranUniversality.Effective.MatchingCode.v_bound`:
+  [Primcodable Alphabet]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Primcodable Alphabet] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Effective/MatchingEncoding.lean:109:0: automatically included section variable(s) unused in theorem `TuranUniversality.Effective.MatchingCode.Lab_primrec`:
+  [DecidableEq Alphabet]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq Alphabet] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Effective/MatchingEncoding.lean:121:0: automatically included section variable(s) unused in theorem `TuranUniversality.Effective.MatchingCode.HasPath_primrec`:
+  [Inhabited Alphabet]
+  [DecidableEq Alphabet]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Inhabited Alphabet] [DecidableEq Alphabet] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Effective/MatchingEncoding.lean:140:0: automatically included section variable(s) unused in theorem `TuranUniversality.Effective.MatchingCode.Represents.H_iff`:
+  [Primcodable Alphabet]
+  [DecidableEq Alphabet]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Primcodable Alphabet] [DecidableEq Alphabet] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Effective/MatchingEncoding.lean:149:0: automatically included section variable(s) unused in theorem `TuranUniversality.Effective.MatchingCode.Represents.V_iff`:
+  [Primcodable Alphabet]
+  [DecidableEq Alphabet]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Primcodable Alphabet] [DecidableEq Alphabet] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Effective/MatchingEncoding.lean:158:0: automatically included section variable(s) unused in theorem `TuranUniversality.Effective.MatchingCode.Represents.Lab_iff`:
+  [Primcodable Alphabet]
+  [DecidableEq Alphabet]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Primcodable Alphabet] [DecidableEq Alphabet] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [9081/9355] Replayed TuranUniversality.Computation.RootedRealization
+warning: TuranUniversality/Computation/RootedRealization.lean:30:0: automatically included section variable(s) unused in theorem `TuranUniversality.Computation.MatchingSystem.decodedLabel_of_declared`:
+  [DecidableEq Kinds]
+  [Fintype Kinds]
+  [Fintype Data]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq Kinds] [Fintype Kinds] [Fintype Data] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Computation/RootedRealization.lean:38:0: automatically included section variable(s) unused in theorem `TuranUniversality.Computation.MatchingSystem.computationalTypes_disjoint`:
+  [Fintype Kinds]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype Kinds] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [9083/9355] Replayed TuranUniversality.Effective.MatchingRulesPrimrec
+warning: TuranUniversality/Effective/MatchingRulesPrimrec.lean:24:0: automatically included section variable(s) unused in theorem `TuranUniversality.Effective.MatchingCode.Q1_primrec`:
+  [Fintype Alphabet]
+  [Inhabited Alphabet]
+  [DecidableEq Alphabet]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype Alphabet] [Inhabited Alphabet] [DecidableEq Alphabet] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [9085/9355] Replayed TuranUniversality.Computation.FrameConstruction
+warning: TuranUniversality/Computation/FrameConstruction.lean:22:8: automatically included section variable(s) unused in theorem `TuranUniversality.Computation.LocalSystem.framedLabel_zero`:
+  [Inhabited Γ]
+  [Inhabited Λ]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Inhabited Γ] [Inhabited Λ] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Computation/FrameConstruction.lean:26:8: automatically included section variable(s) unused in theorem `TuranUniversality.Computation.LocalSystem.framedLabel_last`:
+  [Inhabited Γ]
+  [Inhabited Λ]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Inhabited Γ] [Inhabited Λ] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Computation/FrameConstruction.lean:30:8: automatically included section variable(s) unused in theorem `TuranUniversality.Computation.LocalSystem.framedLabel_center`:
+  [Inhabited Γ]
+  [Inhabited Λ]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Inhabited Γ] [Inhabited Λ] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [9086/9355] Replayed TuranUniversality.Computation.FramePrefix
+warning: TuranUniversality/Computation/FramePrefix.lean:16:0: automatically included section variable(s) unused in theorem `TuranUniversality.Computation.LocalSystem.framedLabel_start`:
+  [Inhabited Γ]
+  [Inhabited Λ]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Inhabited Γ] [Inhabited Λ] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Computation/FramePrefix.lean:41:47: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+⚠ [9095/9355] Replayed TuranUniversality.Density.GuardSplit
+warning: TuranUniversality/Density/GuardSplit.lean:23:0: automatically included section variable(s) unused in theorem `TuranUniversality.Weighted.RootedModel.dataGraph_isHom`:
+  [Fintype Roots]
+  [Fintype Data]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype Roots] [Fintype Data] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [9101/9355] Replayed TuranUniversality.Weighted.IncidenceWitness
+warning: TuranUniversality/Weighted/IncidenceWitness.lean:26:8: automatically included section variable(s) unused in theorem `TuranUniversality.Weighted.RootedModel.mem_restrictData`:
+  [Fintype Data]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype Data] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Weighted/IncidenceWitness.lean:49:8: automatically included section variable(s) unused in theorem `TuranUniversality.Weighted.mem_liftDataSet`:
+  [Fintype Data]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype Data] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Weighted/IncidenceWitness.lean:67:8: automatically included section variable(s) unused in theorem `TuranUniversality.Weighted.CompilerSignature.restrict_candidates`:
+  [DecidableEq Code]
+  [DecidableEq Kinds]
+  [Fintype Kinds]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq Code] [DecidableEq Kinds] [Fintype Kinds] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [9102/9355] Replayed TuranUniversality.Weighted.Completion
+warning: TuranUniversality/Weighted/Completion.lean:87:0: automatically included section variable(s) unused in theorem `TuranUniversality.Weighted.Completion.dataLink_uniform`:
+  [DecidableEq Code]
+  [Fintype Code]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq Code] [Fintype Code] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [9103/9355] Replayed TuranUniversality.Weighted.CompletionValue
+warning: TuranUniversality/Weighted/CompletionValue.lean:47:0: automatically included section variable(s) unused in theorem `TuranUniversality.Weighted.Completion.balanced_dataLink_weight`:
+  [DecidableEq Code]
+  [Fintype Code]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq Code] [Fintype Code] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Weighted/CompletionValue.lean:118:0: automatically included section variable(s) unused in theorem `TuranUniversality.Weighted.Completion.cloneSizes_total`:
+  [DecidableEq Code]
+  [Fintype Code]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq Code] [Fintype Code] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [9106/9355] Replayed TuranUniversality.Density.HomInvariance
+warning: TuranUniversality/Density/HomInvariance.lean:29:4: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [9113/9355] Replayed TuranUniversality.Uniformity.AdmissibleWeights
+warning: TuranUniversality/Uniformity/AdmissibleWeights.lean:21:0: automatically included section variable(s) unused in theorem `TuranUniversality.RGraph.core_disjoint_link_image`:
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [9115/9355] Replayed TuranUniversality.Structural.RecordSampling
+warning: TuranUniversality/Structural/RecordSampling.lean:28:0: automatically included section variable(s) unused in theorem `TuranUniversality.Structural.sampleProbability_nonneg`:
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Structural/RecordSampling.lean:35:0: automatically included section variable(s) unused in theorem `TuranUniversality.Structural.sampleProbability_le_one`:
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Structural/RecordSampling.lean:43:0: automatically included section variable(s) unused in theorem `TuranUniversality.Structural.sampleProbability_compl`:
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Structural/RecordSampling.lean:58:0: automatically included section variable(s) unused in theorem `TuranUniversality.Structural.weightedMean_succ`:
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Structural/RecordSampling.lean:79:0: automatically included section variable(s) unused in theorem `TuranUniversality.Structural.weightedMean_one`:
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Structural/RecordSampling.lean:85:23: This simp argument is unused:
+  Fin.prod_univ_one
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [productWeight, Equiv.funUnique, Equiv.piUnique]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: TuranUniversality/Structural/RecordSampling.lean:102:0: automatically included section variable(s) unused in theorem `TuranUniversality.Structural.image_cons`:
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Structural/RecordSampling.lean:115:0: automatically included section variable(s) unused in theorem `TuranUniversality.Structural.RecordSystem.Successful.injective`:
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [9116/9355] Replayed TuranUniversality.Structural.RecordRepair
+warning: TuranUniversality/Structural/RecordRepair.lean:26:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: TuranUniversality/Structural/RecordRepair.lean:23:0: automatically included section variable(s) unused in theorem `TuranUniversality.Structural.probabilityWeights_nonempty`:
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Structural/RecordRepair.lean:30:0: automatically included section variable(s) unused in theorem `TuranUniversality.Structural.weightedMean_add`:
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Structural/RecordRepair.lean:40:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: TuranUniversality/Structural/RecordRepair.lean:75:0: automatically included section variable(s) unused in theorem `TuranUniversality.Structural.RecordSystem.disagreement_indicator_le`:
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [9118/9355] Replayed TuranUniversality.Uniformity.GeneralTransfer
+warning: TuranUniversality/Uniformity/GeneralTransfer.lean:42:0: automatically included section variable(s) unused in theorem `TuranUniversality.PairTransfer.homFree_of_free`:
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [9119/9355] Replayed TuranUniversality.Hypergraph.InducedDegree
+warning: TuranUniversality/Hypergraph/InducedDegree.lean:20:0: automatically included section variable(s) unused in theorem `TuranUniversality.RGraph.induced_isEmbedding`:
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Hypergraph/InducedDegree.lean:27:0: automatically included section variable(s) unused in theorem `TuranUniversality.RGraph.degree_induced`:
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Hypergraph/InducedDegree.lean:60:0: automatically included section variable(s) unused in theorem `TuranUniversality.RGraph.degreeOn_eq_link_filter`:
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [9120/9355] Replayed TuranUniversality.Hypergraph.InducedMaps
+warning: TuranUniversality/Hypergraph/InducedMaps.lean:18:0: automatically included section variable(s) unused in theorem `TuranUniversality.RGraph.IsHom.into_induced`:
+  [Fintype U]
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype U] [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [9121/9355] Replayed TuranUniversality.Density.NearMaxLinks
+warning: TuranUniversality/Density/NearMaxLinks.lean:70:0: automatically included section variable(s) unused in theorem `TuranUniversality.RGraph.linkPolynomial_scale`:
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Density/NearMaxLinks.lean:115:22: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [9122/9355] Replayed TuranUniversality.Density.LowDegree
+warning: TuranUniversality/Density/LowDegree.lean:71:18: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: TuranUniversality/Density/LowDegree.lean:73:18: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+⚠ [9127/9355] Replayed TuranUniversality.Density.WeightedInducedPatterns
+warning: TuranUniversality/Density/WeightedInducedPatterns.lean:29:8: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: TuranUniversality/Density/WeightedInducedPatterns.lean:31:42: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: TuranUniversality/Density/WeightedInducedPatterns.lean:33:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: TuranUniversality/Density/WeightedInducedPatterns.lean:35:8: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: TuranUniversality/Density/WeightedInducedPatterns.lean:36:35: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: TuranUniversality/Density/WeightedInducedPatterns.lean:73:0: automatically included section variable(s) unused in theorem `TuranUniversality.RGraph.isHom_withExtraEdges_iff`:
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Density/WeightedInducedPatterns.lean:79:0: automatically included section variable(s) unused in theorem `TuranUniversality.RGraph.inverseImage_eq_iff`:
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Density/WeightedInducedPatterns.lean:167:0: automatically included section variable(s) unused in theorem `TuranUniversality.RGraph.sum_inducedIndicator`:
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [9128/9355] Replayed TuranUniversality.Structural.FrameBalance
+warning: TuranUniversality/Structural/FrameBalance.lean:65:6: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp [h, blockGraph, Pentagon.graph]
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: TuranUniversality/Structural/FrameBalance.lean:80:27: This simp argument is unused:
+  Function.update_of_ne hj
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [rowChoice, hj]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [9129/9355] Replayed TuranUniversality.Structural.FrameRoles
+warning: TuranUniversality/Structural/FrameRoles.lean:71:0: automatically included section variable(s) unused in theorem `TuranUniversality.Structural.Frame.blockIndicator_eq_one`:
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Structural/FrameRoles.lean:84:0: automatically included section variable(s) unused in theorem `TuranUniversality.Structural.Frame.blockIndicator_values`:
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [9131/9355] Replayed TuranUniversality.Structural.TripleAction
+warning: TuranUniversality/Structural/TripleAction.lean:35:6: This simp argument is unused:
+  Finset.mem_map_equiv
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [wordAction, flipWord, switched, Finset.mem_symmDiff, hf, hi]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [9132/9355] Replayed TuranUniversality.Structural.FrameTransport
+warning: TuranUniversality/Structural/FrameTransport.lean:57:0: automatically included section variable(s) unused in theorem `TuranUniversality.Structural.Frame.roles_eq_map`:
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [9133/9355] Replayed TuranUniversality.Structural.PentagonSymmetry
+warning: TuranUniversality/Structural/PentagonSymmetry.lean:28:59: This simp argument is unused:
+  Equiv.Perm.mul_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [edgeAction, Finset.image_image, Function.comp_def]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [9134/9355] Replayed TuranUniversality.Density.WeightedHomDeletion
+warning: TuranUniversality/Density/WeightedHomDeletion.lean:40:0: automatically included section variable(s) unused in theorem `TuranUniversality.Density.retainedWeight_bounds`:
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Density/WeightedHomDeletion.lean:45:0: automatically included section variable(s) unused in theorem `TuranUniversality.Density.retained_mass_bounds`:
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Density/WeightedHomDeletion.lean:51:0: automatically included section variable(s) unused in theorem `TuranUniversality.Density.conditionedWeight_probability`:
+  [DecidableEq V]
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq V] [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Density/WeightedHomDeletion.lean:57:7: Variable name `v` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _v
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: TuranUniversality/Density/WeightedHomDeletion.lean:68:0: automatically included section variable(s) unused in theorem `TuranUniversality.Density.conditionedWeight_uniform`:
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Density/WeightedHomDeletion.lean:115:33: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: TuranUniversality/Density/WeightedHomDeletion.lean:119:10: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+⚠ [9135/9355] Replayed TuranUniversality.Hypergraph.VertexDeletion
+warning: TuranUniversality/Hypergraph/VertexDeletion.lean:28:8: automatically included section variable(s) unused in theorem `TuranUniversality.RGraph.mem_keepVertices`:
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Hypergraph/VertexDeletion.lean:31:0: automatically included section variable(s) unused in theorem `TuranUniversality.RGraph.keepVertices_subset`:
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [9138/9355] Replayed TuranUniversality.Density.EditDistance
+warning: TuranUniversality/Density/EditDistance.lean:23:0: automatically included section variable(s) unused in theorem `TuranUniversality.RGraph.edgeSymmDifference_eq_difference`:
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [9139/9355] Replayed TuranUniversality.Density.EditPullback
+warning: TuranUniversality/Density/EditPullback.lean:17:0: automatically included section variable(s) unused in theorem `TuranUniversality.RGraph.edgeSymmDifference_inverseImage`:
+  [Fintype W]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype W] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [9144/9355] Replayed TuranUniversality.Effective.MatchingDecision
+warning: TuranUniversality/Effective/MatchingDecision.lean:55:8: automatically included section variable(s) unused in theorem `TuranUniversality.Effective.MatchingCode.check_eq_true`:
+  [Primcodable Alphabet]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Primcodable Alphabet] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [9151/9355] Replayed TuranUniversality.Weighted.MarkerModel
+warning: TuranUniversality/Weighted/MarkerModel.lean:113:0: automatically included section variable(s) unused in theorem `TuranUniversality.Weighted.CompilerSignature.marker_contribution_reward`:
+  [Fintype Kinds]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype Kinds] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [9153/9355] Replayed TuranUniversality.Hypergraph.Labeled
+warning: TuranUniversality/Hypergraph/Labeled.lean:49:0: automatically included section variable(s) unused in theorem `TuranUniversality.RGraph.product_edges_nonempty`:
+  [DecidableEq I]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq I] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Hypergraph/Labeled.lean:73:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [9154/9355] Replayed TuranUniversality.Weighted.BalancedCompletion
+warning: TuranUniversality/Weighted/BalancedCompletion.lean:18:0: automatically included section variable(s) unused in theorem `TuranUniversality.Weighted.assignment_fiber`:
+  [DecidableEq Code]
+  [Fintype Code]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq Code] [Fintype Code] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Weighted/BalancedCompletion.lean:64:8: automatically included section variable(s) unused in theorem `TuranUniversality.Weighted.mem_fiberMatching`:
+  [DecidableEq Code]
+  [Fintype Code]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq Code] [Fintype Code] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [9155/9355] Replayed TuranUniversality.Weighted.PermutationBuilder
+warning: TuranUniversality/Weighted/PermutationBuilder.lean:63:2: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp [completion, balancedCompletion, relationPerms, CompilerSignature.sourceKind,
+    CompilerSignature.targetKind]
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: TuranUniversality/Weighted/PermutationBuilder.lean:74:2: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp [completion, balancedCompletion, relationPerms, CompilerSignature.sourceKind,
+    CompilerSignature.targetKind]
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: TuranUniversality/Weighted/PermutationBuilder.lean:85:2: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp [completion, balancedCompletion, relationPerms, CompilerSignature.sourceKind,
+    CompilerSignature.targetKind]
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+⚠ [9156/9355] Replayed TuranUniversality.Weighted.ThreeCopies
+warning: TuranUniversality/Weighted/ThreeCopies.lean:43:4: Unused tactic linter: `change
+  staticPart (P.label (((threePerm P.H : (Fin 3 × X) → (Fin 3 × X))^[j] x).2)) = _` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [9157/9355] Replayed TuranUniversality.Density.ProductUpper
+warning: TuranUniversality/Density/ProductUpper.lean:19:0: automatically included section variable(s) unused in theorem `TuranUniversality.product_homFree_weighted_bound`:
+  [DecidableEq I]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq I] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [9162/9355] Replayed TuranUniversality.Effective.UniformTemplateMap
+warning: TuranUniversality/Effective/UniformTemplateMap.lean:126:49: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp [mixedTable]
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+⚠ [9165/9355] Replayed TuranUniversality.Structural.RecordMoments
+warning: TuranUniversality/Structural/RecordMoments.lean:30:0: automatically included section variable(s) unused in theorem `TuranUniversality.Structural.weightedMean_scale`:
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Structural/RecordMoments.lean:37:0: automatically included section variable(s) unused in theorem `TuranUniversality.Structural.weightedMean_sub`:
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Structural/RecordMoments.lean:70:0: automatically included section variable(s) unused in theorem `TuranUniversality.Structural.weightedMean_insertNth`:
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Structural/RecordMoments.lean:101:0: automatically included section variable(s) unused in theorem `TuranUniversality.Structural.activeCount_eq_card`:
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Structural/RecordMoments.lean:106:8: automatically included section variable(s) unused in theorem `TuranUniversality.Structural.activeCount_cons`:
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Structural/RecordMoments.lean:174:0: automatically included section variable(s) unused in theorem `TuranUniversality.Structural.activeCount_three_iff`:
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [9166/9355] Replayed TuranUniversality.Structural.RecordReward
+warning: TuranUniversality/Structural/RecordReward.lean:23:0: automatically included section variable(s) unused in theorem `TuranUniversality.Structural.image_removeNth`:
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Structural/RecordReward.lean:61:0: automatically included section variable(s) unused in theorem `TuranUniversality.Structural.LegalObject.WitnessAt.active_others`:
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Structural/RecordReward.lean:96:25: This simp argument is unused:
+  h
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [reward, truth, hn]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: TuranUniversality/Structural/RecordReward.lean:167:0: automatically included section variable(s) unused in theorem `TuranUniversality.Structural.LegalObject.Labels.phase_nonzero_iff`:
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [9168/9355] Replayed TuranUniversality.Density.FamilyVariational
+warning: TuranUniversality/Density/FamilyVariational.lean:51:6: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [9171/9355] Replayed TuranUniversality.Structural.RecordScores
+warning: TuranUniversality/Structural/RecordScores.lean:73:0: automatically included section variable(s) unused in theorem `TuranUniversality.Structural.RecordSystem.observedCorrection_bounds`:
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Structural/RecordScores.lean:123:39: This simp argument is unused:
+  hc3
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [extendedCorrection, truth, hc4, hr]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [9172/9355] Replayed TuranUniversality.Structural.RecordCollisions
+warning: TuranUniversality/Structural/RecordCollisions.lean:45:0: automatically included section variable(s) unused in theorem `TuranUniversality.Structural.collision_indicator_le`:
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [9175/9355] Replayed TuranUniversality.Stability.Psi
+warning: TuranUniversality/Stability/Psi.lean:122:20: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [9177/9355] Replayed TuranUniversality.Density.LowDegreeConvergence
+warning: TuranUniversality/Density/LowDegreeConvergence.lean:62:8: Variable name `v` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _v
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [9178/9355] Replayed TuranUniversality.Structural.WeightedBlowups
+warning: TuranUniversality/Structural/WeightedBlowups.lean:33:0: automatically included section variable(s) unused in theorem `TuranUniversality.RGraph.isHom_blowup_iff`:
+  [Fintype U]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype U] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [9181/9355] Replayed TuranUniversality.Structural.FrameNeutral
+warning: TuranUniversality/Structural/FrameNeutral.lean:75:19: Variable name `hq` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hq
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [9184/9355] Replayed TuranUniversality.Hypergraph.FiniteProfiles
+warning: TuranUniversality/Hypergraph/FiniteProfiles.lean:31:10: Variable name `e` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _e
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: TuranUniversality/Hypergraph/FiniteProfiles.lean:74:0: automatically included section variable(s) unused in theorem `TuranUniversality.FiniteRolePattern.map_eq_of_equiv`:
+  [DecidableEq R]
+  [DecidableEq V]
+  [DecidableEq W]
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq R] [DecidableEq V] [DecidableEq W] [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Hypergraph/FiniteProfiles.lean:88:0: automatically included section variable(s) unused in theorem `TuranUniversality.FiniteRolePattern.fiber_card`:
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Hypergraph/FiniteProfiles.lean:99:0: automatically included section variable(s) unused in theorem `TuranUniversality.FiniteRolePattern.exists_equiv_of_map_eq`:
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [9185/9355] Replayed TuranUniversality.Density.FiniteProfileRounding
+warning: TuranUniversality/Density/FiniteProfileRounding.lean:85:12: `tendsto_finset_sum` has been deprecated: Use `tendsto_finsetSum` instead
+
+Hint: Replace the deprecated name:
+  tendsto_finset_̵s̵S̲um
+warning: TuranUniversality/Density/FiniteProfileRounding.lean:86:73: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [9197/9355] Replayed TuranUniversality.Effective.RootedEncoding
+warning: TuranUniversality/Effective/RootedEncoding.lean:25:0: automatically included section variable(s) unused in theorem `TuranUniversality.Effective.RootedCode.size_primrec`:
+  [Fintype Roots]
+  [DecidableEq Roots]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype Roots] [DecidableEq Roots] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Effective/RootedEncoding.lean:26:0: automatically included section variable(s) unused in theorem `TuranUniversality.Effective.RootedCode.assignment_primrec`:
+  [Fintype Roots]
+  [DecidableEq Roots]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype Roots] [DecidableEq Roots] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Effective/RootedEncoding.lean:70:0: automatically included section variable(s) unused in theorem `TuranUniversality.Effective.RootedCode.rootPairEdge_iff`:
+  [Fintype Roots]
+  [Primcodable Roots]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype Roots] [Primcodable Roots] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Effective/RootedEncoding.lean:88:0: automatically included section variable(s) unused in theorem `TuranUniversality.Effective.RootedCode.rootEdge_iff`:
+  [Fintype Roots]
+  [Primcodable Roots]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype Roots] [Primcodable Roots] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Effective/RootedEncoding.lean:105:0: automatically included section variable(s) unused in theorem `TuranUniversality.Effective.RootedCode.dataEdge_iff`:
+  [Fintype Roots]
+  [Primcodable Roots]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype Roots] [Primcodable Roots] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Effective/RootedEncoding.lean:120:0: automatically included section variable(s) unused in theorem `TuranUniversality.Effective.RootedCode.rootPairEdge_bound`:
+  [Fintype Roots]
+  [DecidableEq Roots]
+  [Primcodable Roots]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype Roots] [DecidableEq Roots] [Primcodable Roots] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Effective/RootedEncoding.lean:125:0: automatically included section variable(s) unused in theorem `TuranUniversality.Effective.RootedCode.rootEdge_bound`:
+  [Fintype Roots]
+  [DecidableEq Roots]
+  [Primcodable Roots]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype Roots] [DecidableEq Roots] [Primcodable Roots] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Effective/RootedEncoding.lean:130:0: automatically included section variable(s) unused in theorem `TuranUniversality.Effective.RootedCode.dataEdge_bound`:
+  [Fintype Roots]
+  [DecidableEq Roots]
+  [Primcodable Roots]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype Roots] [DecidableEq Roots] [Primcodable Roots] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Effective/RootedEncoding.lean:183:0: automatically included section variable(s) unused in theorem `TuranUniversality.Effective.RootedCode.candidate_iff`:
+  [DecidableEq Code]
+  [Fintype Kinds]
+  [DecidableEq Kinds]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq Code] [Fintype Kinds] [DecidableEq Kinds] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Effective/RootedEncoding.lean:245:60: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: TuranUniversality/Effective/RootedEncoding.lean:247:0: automatically included section variable(s) unused in theorem `TuranUniversality.Effective.RootedCode.declared_unique`:
+  [Primcodable Roots]
+  [Fintype Code]
+  [DecidableEq Code]
+  [Fintype Kinds]
+  [DecidableEq Kinds]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Primcodable Roots] [Fintype Code] [DecidableEq Code] [Fintype Kinds] [DecidableEq Kinds] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Effective/RootedEncoding.lean:255:8: automatically included section variable(s) unused in theorem `TuranUniversality.Effective.RootedCode.mem_declaredCodes`:
+  [Primcodable Roots]
+  [Fintype Kinds]
+  [DecidableEq Kinds]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Primcodable Roots] [Fintype Kinds] [DecidableEq Kinds] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Effective/RootedEncoding.lean:311:0: automatically included section variable(s) unused in theorem `TuranUniversality.Effective.RootedCode.matchingCode_represents`:
+  [Primcodable Alphabet]
+  [DecidableEq Alphabet]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Primcodable Alphabet] [DecidableEq Alphabet] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [9198/9355] Replayed TuranUniversality.Effective.RootedChecker
+warning: TuranUniversality/Effective/RootedChecker.lean:160:61: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [9199/9355] Replayed TuranUniversality.Effective.AdmissibleChecker
+warning: TuranUniversality/Effective/AdmissibleChecker.lean:34:0: automatically included section variable(s) unused in theorem `TuranUniversality.Effective.RootedCode.fullOK_iff`:
+  [Fintype Alphabet]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype Alphabet] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Effective/AdmissibleChecker.lean:48:8: automatically included section variable(s) unused in theorem `TuranUniversality.Effective.RootedCode.check_eq_true`:
+  [Primcodable Roots]
+  [Fintype Kinds]
+  [Primcodable Alphabet]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Primcodable Roots] [Fintype Kinds] [Primcodable Alphabet] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Effective/AdmissibleChecker.lean:52:0: automatically included section variable(s) unused in theorem `TuranUniversality.Effective.RootedCode.assignment_ofFn`:
+  [Fintype Roots]
+  [DecidableEq Roots]
+  [Primcodable Roots]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype Roots] [DecidableEq Roots] [Primcodable Roots] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Effective/AdmissibleChecker.lean:82:0: automatically included section variable(s) unused in theorem `TuranUniversality.Effective.assignmentWords_primrec`:
+  [DecidableEq Roots]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq Roots] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Effective/AdmissibleChecker.lean:85:8: automatically included section variable(s) unused in theorem `TuranUniversality.Effective.mem_assignmentWords`:
+  [DecidableEq Roots]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq Roots] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [9200/9355] Replayed TuranUniversality.Effective.RootedPrimrec
+warning: TuranUniversality/Effective/RootedPrimrec.lean:43:0: automatically included section variable(s) unused in theorem `TuranUniversality.Effective.RootedCode.missingPair_primrec`:
+  [DecidableEq Code]
+  [Fintype Kinds]
+  [DecidableEq Kinds]
+  [Primcodable Kinds]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq Code] [Fintype Kinds] [DecidableEq Kinds] [Primcodable Kinds] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Effective/RootedPrimrec.lean:48:0: automatically included section variable(s) unused in theorem `TuranUniversality.Effective.RootedCode.allowedRoot_primrec`:
+  [DecidableEq Code]
+  [Fintype Kinds]
+  [Primcodable Kinds]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq Code] [Fintype Kinds] [Primcodable Kinds] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [9201/9355] Replayed TuranUniversality.Selector.RootedMonotonicity
+warning: TuranUniversality/Selector/RootedMonotonicity.lean:46:0: automatically included section variable(s) unused in theorem `TuranUniversality.Selector.RootedEmbedding.candidates`:
+  [DecidableEq Code]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq Code] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Selector/RootedMonotonicity.lean:71:0: automatically included section variable(s) unused in theorem `TuranUniversality.Selector.RootedEmbedding.typeClass`:
+  [Fintype Kinds]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype Kinds] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Selector/RootedMonotonicity.lean:93:0: automatically included section variable(s) unused in theorem `TuranUniversality.Selector.RootedEmbedding.oneRootRules`:
+  [Fintype X]
+  [Fintype Y]
+  [Fintype Kinds]
+  [DecidableEq Kinds]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype X] [Fintype Y] [Fintype Kinds] [DecidableEq Kinds] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Selector/RootedMonotonicity.lean:116:0: automatically included section variable(s) unused in theorem `TuranUniversality.Selector.RootedEmbedding.oneMarker`:
+  [Fintype Roots]
+  [Fintype X]
+  [Fintype Y]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype Roots] [Fintype X] [Fintype Y] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Selector/RootedMonotonicity.lean:122:0: automatically included section variable(s) unused in theorem `TuranUniversality.Selector.RootedEmbedding.markerTypes`:
+  [Fintype X]
+  [Fintype Y]
+  [Fintype Kinds]
+  [DecidableEq Kinds]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype X] [Fintype Y] [Fintype Kinds] [DecidableEq Kinds] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Selector/RootedMonotonicity.lean:175:0: automatically included section variable(s) unused in theorem `TuranUniversality.Selector.rootedVertex_comp`:
+  [DecidableEq Roots]
+  [DecidableEq X]
+  [DecidableEq Y]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq Roots] [DecidableEq X] [DecidableEq Y] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Selector/RootedMonotonicity.lean:177:44: This simp argument is unused:
+  Function.comp_def
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [rootedVertex, h]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: TuranUniversality/Selector/RootedMonotonicity.lean:179:0: automatically included section variable(s) unused in theorem `TuranUniversality.Selector.image_disjSum_map`:
+  [DecidableEq X]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq X] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [9202/9355] Replayed TuranUniversality.Reduction.LegalClass
+warning: TuranUniversality/Reduction/LegalClass.lean:15:36: Ambiguous namespace `Computation`: it is interpreted as `_root_.TuranUniversality.Computation` because this `open` occurs inside `namespace TuranUniversality.Reduction`, while `_root_.Computation` is silently not opened. Specify the namespace unambiguously, e.g. `_root_.TuranUniversality.Computation`. The warning can sometimes also be addressed by moving the `open` outside of the surrounding `namespace`.
+
+Note: This linter can be disabled with `set_option linter.ambiguousOpen false`
+⚠ [9206/9355] Replayed TuranUniversality.Selector.RootingSupport
+warning: TuranUniversality/Selector/RootingSupport.lean:22:0: automatically included section variable(s) unused in theorem `TuranUniversality.Selector.rooting_range_card`:
+  [DecidableEq Roots]
+  [Fintype X]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq Roots] [Fintype X] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Selector/RootingSupport.lean:29:0: automatically included section variable(s) unused in theorem `TuranUniversality.Selector.inverse_none_iff`:
+  [DecidableEq Roots]
+  [Fintype X]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq Roots] [Fintype X] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Selector/RootingSupport.lean:75:0: automatically included section variable(s) unused in theorem `TuranUniversality.Selector.inverse_map_precompose`:
+  [Fintype Roots]
+  [DecidableEq Roots]
+  [Fintype X]
+  [DecidableEq X]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype Roots] [DecidableEq Roots] [Fintype X] [DecidableEq X] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [9207/9355] Replayed TuranUniversality.Selector.LocalRootedWitness
+warning: TuranUniversality/Selector/LocalRootedWitness.lean:26:0: automatically included section variable(s) unused in theorem `TuranUniversality.Selector.markerSupport_card`:
+  [Fintype Roots]
+  [Fintype Data]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype Roots] [Fintype Data] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Selector/LocalRootedWitness.lean:34:0: automatically included section variable(s) unused in theorem `TuranUniversality.Selector.subset_markerSupport`:
+  [Fintype Roots]
+  [Fintype Data]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype Roots] [Fintype Data] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Selector/LocalRootedWitness.lean:39:0: automatically included section variable(s) unused in theorem `TuranUniversality.Selector.decodedLabel_restrictData`:
+  [DecidableEq Alphabet]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq Alphabet] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [9209/9355] Replayed TuranUniversality.Weighted.ConcreteWitness
+warning: TuranUniversality/Weighted/ConcreteWitness.lean:111:0: automatically included section variable(s) unused in theorem `TuranUniversality.Weighted.ConcreteWitness.baselineCompletion_declared`:
+  [Inhabited Λ]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Inhabited Λ] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Weighted/ConcreteWitness.lean:127:0: automatically included section variable(s) unused in theorem `TuranUniversality.Weighted.ConcreteWitness.baselineSizes_pos`:
+  [Inhabited Λ]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Inhabited Λ] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Weighted/ConcreteWitness.lean:130:0: automatically included section variable(s) unused in theorem `TuranUniversality.Weighted.ConcreteWitness.baselineCompletion_value`:
+  [Inhabited Λ]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Inhabited Λ] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [9210/9355] Replayed TuranUniversality.Effective.SingletonEncoding
+warning: TuranUniversality/Effective/SingletonEncoding.lean:39:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [9211/9355] Replayed TuranUniversality.Structural.RecordComplete
+warning: TuranUniversality/Structural/RecordComplete.lean:63:0: automatically included section variable(s) unused in theorem `TuranUniversality.Structural.LegalObject.restrict_labels`:
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Structural/RecordComplete.lean:90:0: automatically included section variable(s) unused in theorem `TuranUniversality.Structural.LegalObject.activeMass_nonneg`:
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Structural/RecordComplete.lean:100:0: automatically included section variable(s) unused in theorem `TuranUniversality.Structural.LegalObject.projection_eq_zero_of_mass`:
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [9212/9355] Replayed TuranUniversality.Structural.RootedLocal
+warning: TuranUniversality/Structural/RootedLocal.lean:19:5: Ambiguous namespace `Cube`: it is interpreted as `_root_.TuranUniversality.Structural.Cube` because this `open` occurs inside `namespace TuranUniversality.Structural.Rooted`, while `_root_.Cube` is silently not opened. Specify the namespace unambiguously, e.g. `_root_.TuranUniversality.Structural.Cube`. The warning can sometimes also be addressed by moving the `open` outside of the surrounding `namespace`.
+
+Note: This linter can be disabled with `set_option linter.ambiguousOpen false`
+warning: TuranUniversality/Structural/RootedLocal.lean:47:8: automatically included section variable(s) unused in theorem `TuranUniversality.Structural.Rooted.mem_dataSet`:
+  [DecidableEq V]
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq V] [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Structural/RootedLocal.lean:80:0: automatically included section variable(s) unused in theorem `TuranUniversality.Structural.Rooted.dataSet_congr`:
+  [DecidableEq V]
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq V] [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Structural/RootedLocal.lean:86:0: automatically included section variable(s) unused in theorem `TuranUniversality.Structural.Rooted.image_congr`:
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [9213/9355] Replayed TuranUniversality.Structural.RecordTransport
+warning: TuranUniversality/Structural/RecordTransport.lean:170:8: automatically included section variable(s) unused in theorem `TuranUniversality.Structural.RecordSystem.mem_preSet`:
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [9214/9355] Replayed TuranUniversality.Structural.CompiledTransport
+warning: TuranUniversality/Structural/CompiledTransport.lean:18:0: automatically included section variable(s) unused in theorem `TuranUniversality.Structural.Compiled.mapData_injective`:
+  [DecidableEq V]
+  [DecidableEq W]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq V] [DecidableEq W] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Structural/CompiledTransport.lean:21:0: automatically included section variable(s) unused in theorem `TuranUniversality.Structural.Compiled.mapData_eq_data`:
+  [DecidableEq V]
+  [DecidableEq W]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq V] [DecidableEq W] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [9216/9355] Replayed TuranUniversality.Structural.CompiledCloning
+warning: TuranUniversality/Structural/CompiledCloning.lean:15:8: automatically included section variable(s) unused in theorem `TuranUniversality.Structural.Compiled.mem_image_mapData_susp`:
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Structural/CompiledCloning.lean:19:8: automatically included section variable(s) unused in theorem `TuranUniversality.Structural.Compiled.mem_image_mapData_block`:
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [9217/9355] Replayed TuranUniversality.Structural.CompiledWeights
+warning: TuranUniversality/Structural/CompiledWeights.lean:68:0: automatically included section variable(s) unused in theorem `TuranUniversality.Structural.Compiled.dataMass_nonneg`:
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Structural/CompiledWeights.lean:69:25: Variable name `v` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _v
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: TuranUniversality/Structural/CompiledWeights.lean:71:0: automatically included section variable(s) unused in theorem `TuranUniversality.Structural.Compiled.blockMass_nonneg`:
+  [DecidableEq V]
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq V] [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Structural/CompiledWeights.lean:76:0: automatically included section variable(s) unused in theorem `TuranUniversality.Structural.Compiled.mass_sum`:
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Structural/CompiledWeights.lean:83:0: automatically included section variable(s) unused in theorem `TuranUniversality.Structural.Compiled.normalizedData_probability`:
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Structural/CompiledWeights.lean:90:44: Variable name `i` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _i
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: TuranUniversality/Structural/CompiledWeights.lean:95:40: Variable name `i` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _i
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: TuranUniversality/Structural/CompiledWeights.lean:142:0: automatically included section variable(s) unused in theorem `TuranUniversality.Structural.Compiled.factor_eq_zero_of_dataMass`:
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Structural/CompiledWeights.lean:145:0: automatically included section variable(s) unused in theorem `TuranUniversality.Structural.Compiled.normalizedData_eq_zero`:
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [9218/9355] Replayed TuranUniversality.Structural.BlockDefects
+warning: TuranUniversality/Structural/BlockDefects.lean:119:0: automatically included section variable(s) unused in theorem `TuranUniversality.Structural.Compiled.polynomial_le_averaged_defect`:
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [9219/9355] Replayed TuranUniversality.Structural.RecordApproximationBasic
+warning: TuranUniversality/Structural/RecordApproximationBasic.lean:84:0: automatically included section variable(s) unused in theorem `TuranUniversality.Structural.RecordApproximation.mixture_probability`:
+  [DecidableEq V]
+  [DecidableEq W]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq V] [DecidableEq W] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Structural/RecordApproximationBasic.lean:112:0: automatically included section variable(s) unused in theorem `TuranUniversality.Structural.RecordApproximation.mixture_squares`:
+  [DecidableEq V]
+  [DecidableEq W]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq V] [DecidableEq W] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [9221/9355] Replayed TuranUniversality.Structural.RecordApproximationSupremum
+warning: TuranUniversality/Structural/RecordApproximationSupremum.lean:36:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: TuranUniversality/Structural/RecordApproximationSupremum.lean:37:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [9222/9355] Replayed TuranUniversality.Structural.CompiledOptimum
+warning: TuranUniversality/Structural/CompiledOptimum.lean:29:0: automatically included section variable(s) unused in theorem `TuranUniversality.Structural.Compiled.optimalWeights_probability`:
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Structural/CompiledOptimum.lean:40:6: This simp argument is unused:
+  Fintype.sum_sigma
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [optimalWeights, Fintype.sum_sum_type, Sum.elim_inl, Sum.elim_inr, Finset.sum_const,
+    Finset.card_univ, Fintype.card_fin, nsmul_eq_mul, Nat.cast_ofNat, ← Finset.mul_sum, hx.2, mul_one]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: TuranUniversality/Structural/CompiledOptimum.lean:41:20: This simp argument is unused:
+  Nat.cast_ofNat
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [optimalWeights, Fintype.sum_sum_type, Sum.elim_inl, Sum.elim_inr, Fintype.sum_sigma,
+    Finset.sum_const, Finset.card_univ, Fintype.card_fin, nsmul_eq_mul, ← Finset.mul_sum, hx.2, mul_one]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: TuranUniversality/Structural/CompiledOptimum.lean:51:0: automatically included section variable(s) unused in theorem `TuranUniversality.Structural.Compiled.optimalWeights_dataMass`:
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Structural/CompiledOptimum.lean:55:0: automatically included section variable(s) unused in theorem `TuranUniversality.Structural.Compiled.optimalWeights_blockMass`:
+  [DecidableEq V]
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq V] [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Structural/CompiledOptimum.lean:152:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: TuranUniversality/Structural/CompiledOptimum.lean:153:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [9223/9355] Replayed TuranUniversality.Stability.NearExtremal
+warning: TuranUniversality/Stability/NearExtremal.lean:78:25: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: TuranUniversality/Stability/NearExtremal.lean:78:39: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [9224/9355] Replayed TuranUniversality.Structural.PhaseRoles
+warning: TuranUniversality/Structural/PhaseRoles.lean:30:8: automatically included section variable(s) unused in theorem `TuranUniversality.Structural.PhaseRoles.mem_dataSet`:
+  [DecidableEq U]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq U] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Structural/PhaseRoles.lean:36:8: automatically included section variable(s) unused in theorem `TuranUniversality.Structural.PhaseRoles.mem_activeSet`:
+  [DecidableEq U]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq U] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Structural/PhaseRoles.lean:69:18: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: TuranUniversality/Structural/PhaseRoles.lean:70:6: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp [ha, RGraph.empty] at he
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: TuranUniversality/Structural/PhaseRoles.lean:103:25: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+⚠ [9225/9355] Replayed TuranUniversality.Structural.PhaseSamples
+warning: TuranUniversality/Structural/PhaseSamples.lean:31:0: automatically included section variable(s) unused in theorem `TuranUniversality.Structural.PhaseRoles.dataMap_active_iff`:
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Structural/PhaseSamples.lean:41:49: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: TuranUniversality/Structural/PhaseSamples.lean:38:0: automatically included section variable(s) unused in theorem `TuranUniversality.Structural.PhaseRoles.dataMap_eq_active`:
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Structural/PhaseSamples.lean:41:57: This simp argument is unused:
+  ite_true
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [dataMap, (mem_activeSet θ u).mp hu, if_pos]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: TuranUniversality/Structural/PhaseSamples.lean:47:0: automatically included section variable(s) unused in theorem `TuranUniversality.Structural.PhaseRoles.dataMap_injective`:
+  [DecidableEq U]
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq U] [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [9226/9355] Replayed TuranUniversality.Structural.PhaseMixture
+warning: TuranUniversality/Structural/PhaseMixture.lean:27:0: automatically included section variable(s) unused in theorem `TuranUniversality.Structural.PhaseRoles.sampleVertex_eq`:
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Structural/PhaseMixture.lean:67:0: automatically included section variable(s) unused in theorem `TuranUniversality.Structural.PhaseRoles.inverseImage_pullback`:
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [9229/9355] Replayed TuranUniversality.Structural.WeightedProfiles
+warning: TuranUniversality/Structural/WeightedProfiles.lean:29:0: automatically included section variable(s) unused in theorem `TuranUniversality.Structural.WeightedProfile.cloneCount_pos`:
+  [Fintype V]
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Structural/WeightedProfiles.lean:35:0: automatically included section variable(s) unused in theorem `TuranUniversality.Structural.WeightedProfile.cloneCount_ratio_tendsto`:
+  [Fintype V]
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Structural/WeightedProfiles.lean:103:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [9230/9355] Replayed TuranUniversality.Structural.ExtremalProfiles
+warning: TuranUniversality/Structural/ExtremalProfiles.lean:69:24: `Set.setOf_forall` has been deprecated: Use `Set.ofPred_forall` instead
+
+Hint: Replace the deprecated name:
+  S̵e̵t̵.̵s̵e̵t̵O̵f̵_̵f̵o̵r̵a̵l̵l̵S̲e̲t̲.̲o̲f̲P̲r̲e̲d̲_̲f̲o̲r̲a̲l̲l̲
+warning: TuranUniversality/Structural/ExtremalProfiles.lean:93:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [9233/9355] Replayed TuranUniversality.Structural.ReadbackTest
+warning: TuranUniversality/Structural/ReadbackTest.lean:29:8: automatically included section variable(s) unused in theorem `TuranUniversality.Structural.Readback.mem_added_frame`:
+  [DecidableEq U]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq U] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Structural/ReadbackTest.lean:34:8: automatically included section variable(s) unused in theorem `TuranUniversality.Structural.Readback.mem_added_inner`:
+  [DecidableEq U]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq U] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Structural/ReadbackTest.lean:38:0: automatically included section variable(s) unused in theorem `TuranUniversality.Structural.Readback.addedEdge_card`:
+  [DecidableEq U]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq U] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [9234/9355] Replayed TuranUniversality.Structural.ReadbackLegality
+warning: TuranUniversality/Structural/ReadbackLegality.lean:60:2: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp [he] at hm
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+⚠ [9236/9355] Replayed TuranUniversality.Structural.ReadbackParameters
+warning: TuranUniversality/Structural/ReadbackParameters.lean:44:0: automatically included section variable(s) unused in theorem `TuranUniversality.Structural.Readback.parameterMap_eq_extend`:
+  [DecidableEq U]
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq U] [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Structural/ReadbackParameters.lean:56:0: automatically included section variable(s) unused in theorem `TuranUniversality.Structural.Readback.parameterMap_of_action_eq`:
+  [DecidableEq U]
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq U] [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [9237/9355] Replayed TuranUniversality.Structural.ReadbackDensity
+warning: TuranUniversality/Structural/ReadbackDensity.lean:22:5: Ambiguous namespace `Cube`: it is interpreted as `_root_.TuranUniversality.Structural.Cube` because this `open` occurs inside `namespace TuranUniversality.Structural.Readback`, while `_root_.Cube` is silently not opened. Specify the namespace unambiguously, e.g. `_root_.TuranUniversality.Structural.Cube`. The warning can sometimes also be addressed by moving the `open` outside of the surrounding `namespace`.
+
+Note: This linter can be disabled with `set_option linter.ambiguousOpen false`
+warning: TuranUniversality/Structural/ReadbackDensity.lean:95:10: Variable name `e` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _e
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [9239/9355] Replayed TuranUniversality.Structural.RecordStability
+warning: TuranUniversality/Structural/RecordStability.lean:28:0: automatically included section variable(s) unused in theorem `TuranUniversality.Structural.RecordSystem.observedPayoff_bounds`:
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [9242/9355] Replayed TuranUniversality.Structural.CompiledRepair
+warning: TuranUniversality/Structural/CompiledRepair.lean:51:6: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: TuranUniversality/Structural/CompiledRepair.lean:51:6: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: TuranUniversality/Structural/CompiledRepair.lean:60:2: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [9243/9355] Replayed TuranUniversality.Structural.CompiledCoupling
+warning: TuranUniversality/Structural/CompiledCoupling.lean:120:20: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: TuranUniversality/Structural/CompiledCoupling.lean:120:62: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [9244/9355] Replayed TuranUniversality.Structural.ProfileSupport
+warning: TuranUniversality/Structural/ProfileSupport.lean:28:0: automatically included section variable(s) unused in theorem `TuranUniversality.RGraph.sourcePullback_edges`:
+  [Fintype U]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype U] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Structural/ProfileSupport.lean:36:0: automatically included section variable(s) unused in theorem `TuranUniversality.RGraph.sourcePullback_hom_iff`:
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Structural/ProfileSupport.lean:78:8: automatically included section variable(s) unused in theorem `TuranUniversality.RGraph.mem_sourceSupport`:
+  [Fintype U]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype U] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Structural/ProfileSupport.lean:89:32: Variable name `e` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _e
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: TuranUniversality/Structural/ProfileSupport.lean:111:9: Variable name `e` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _e
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: TuranUniversality/Structural/ProfileSupport.lean:113:0: automatically included section variable(s) unused in theorem `TuranUniversality.RGraph.noIsolates_pullback_equiv`:
+  [Fintype U]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype U] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Structural/ProfileSupport.lean:153:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: TuranUniversality/Structural/ProfileSupport.lean:166:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [9247/9355] Replayed TuranUniversality.Density.FiniteProfiles
+warning: TuranUniversality/Density/FiniteProfiles.lean:35:0: automatically included section variable(s) unused in theorem `TuranUniversality.FiniteRolePattern.continuous_coordinate`:
+  [DecidableEq R]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq R] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Density/FiniteProfiles.lean:45:0: automatically included section variable(s) unused in theorem `TuranUniversality.FiniteRolePattern.compatible_iff_of_injective`:
+  [Fintype R]
+  [Fintype U]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype R] [Fintype U] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [9248/9355] Replayed TuranUniversality.Effective.StructuralObjects
+warning: TuranUniversality/Effective/StructuralObjects.lean:20:5: Ambiguous namespace `Uniform`: it is interpreted as `_root_.TuranUniversality.Effective.Uniform` because this `open` occurs inside `namespace TuranUniversality.Effective.StructuralCodes`, while `_root_.Uniform` is silently not opened. Specify the namespace unambiguously, e.g. `_root_.TuranUniversality.Effective.Uniform`. The warning can sometimes also be addressed by moving the `open` outside of the surrounding `namespace`.
+
+Note: This linter can be disabled with `set_option linter.ambiguousOpen false`
+⚠ [9249/9355] Replayed TuranUniversality.Effective.StructuralLabels
+warning: TuranUniversality/Effective/StructuralLabels.lean:12:5: Ambiguous namespace `Uniform`: it is interpreted as `_root_.TuranUniversality.Effective.Uniform` because this `open` occurs inside `namespace TuranUniversality.Effective.StructuralCodes`, while `_root_.Uniform` is silently not opened. Specify the namespace unambiguously, e.g. `_root_.TuranUniversality.Effective.Uniform`. The warning can sometimes also be addressed by moving the `open` outside of the surrounding `namespace`.
+
+Note: This linter can be disabled with `set_option linter.ambiguousOpen false`
+⚠ [9250/9355] Replayed TuranUniversality.Effective.StructuralObjectsPrimrec
+warning: TuranUniversality/Effective/StructuralObjectsPrimrec.lean:12:5: Ambiguous namespace `Uniform`: it is interpreted as `_root_.TuranUniversality.Effective.Uniform` because this `open` occurs inside `namespace TuranUniversality.Effective.StructuralCodes`, while `_root_.Uniform` is silently not opened. Specify the namespace unambiguously, e.g. `_root_.TuranUniversality.Effective.Uniform`. The warning can sometimes also be addressed by moving the `open` outside of the surrounding `namespace`.
+
+Note: This linter can be disabled with `set_option linter.ambiguousOpen false`
+⚠ [9252/9355] Replayed TuranUniversality.Density.FiniteProfileRelabel
+warning: TuranUniversality/Density/FiniteProfileRelabel.lean:29:8: automatically included section variable(s) unused in theorem `TuranUniversality.FiniteRolePattern.mem_relabel_map`:
+  [DecidableEq R]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq R] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Density/FiniteProfileRelabel.lean:66:0: automatically included section variable(s) unused in theorem `TuranUniversality.FiniteRolePattern.pushforward_equiv`:
+  [DecidableEq R]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq R] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Density/FiniteProfileRelabel.lean:83:10: `Equiv.apply_eq_iff_eq_symm_apply` has been deprecated: Use `Equiv.eq_symm_apply` instead
+
+Note: The updated constant has a different type:
+  ∀ {α : Sort u_1} {β : Sort u_2} (e : α ≃ β) {x : β} {y : α}, y = e.symm x ↔ e y = x
+instead of
+  ∀ {α : Sort u} {β : Sort v} {x : α} {y : β} (f : α ≃ β), f x = y ↔ x = f.symm y
+warning: TuranUniversality/Density/FiniteProfileRelabel.lean:77:0: automatically included section variable(s) unused in theorem `TuranUniversality.FiniteRolePattern.fiberSize_relabel`:
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [9255/9355] Replayed TuranUniversality.Effective.AllowedChecker
+warning: TuranUniversality/Effective/AllowedChecker.lean:21:5: Ambiguous namespace `Computation`: it is interpreted as `_root_.TuranUniversality.Computation` because this `open` occurs inside `namespace TuranUniversality.Effective`, while `_root_.Computation` is silently not opened. Specify the namespace unambiguously, e.g. `_root_.TuranUniversality.Computation`. The warning can sometimes also be addressed by moving the `open` outside of the surrounding `namespace`.
+
+Note: This linter can be disabled with `set_option linter.ambiguousOpen false`
+⚠ [9259/9355] Replayed TuranUniversality.Selector.IncidenceRecovery
+warning: TuranUniversality/Selector/IncidenceRecovery.lean:46:0: automatically included section variable(s) unused in theorem `TuranUniversality.Selector.RowRootingPlan.matching`:
+  [Fintype Kinds]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype Kinds] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [9262/9355] Replayed TuranUniversality.Reduction.TargetExclusion
+warning: TuranUniversality/Reduction/TargetExclusion.lean:13:36: Ambiguous namespace `Computation`: it is interpreted as `_root_.TuranUniversality.Computation` because this `open` occurs inside `namespace TuranUniversality.Reduction`, while `_root_.Computation` is silently not opened. Specify the namespace unambiguously, e.g. `_root_.TuranUniversality.Computation`. The warning can sometimes also be addressed by moving the `open` outside of the surrounding `namespace`.
+
+Note: This linter can be disabled with `set_option linter.ambiguousOpen false`
+warning: TuranUniversality/Reduction/TargetExclusion.lean:71:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: TuranUniversality/Reduction/TargetExclusion.lean:72:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: TuranUniversality/Reduction/TargetExclusion.lean:73:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: TuranUniversality/Reduction/TargetExclusion.lean:120:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [9266/9355] Replayed TuranUniversality.Structural.RootedRecords
+warning: TuranUniversality/Structural/RootedRecords.lean:17:5: Ambiguous namespace `Cube`: it is interpreted as `_root_.TuranUniversality.Structural.Cube` because this `open` occurs inside `namespace TuranUniversality.Structural.Rooted`, while `_root_.Cube` is silently not opened. Specify the namespace unambiguously, e.g. `_root_.TuranUniversality.Structural.Cube`. The warning can sometimes also be addressed by moving the `open` outside of the surrounding `namespace`.
+
+Note: This linter can be disabled with `set_option linter.ambiguousOpen false`
+warning: TuranUniversality/Structural/RootedRecords.lean:21:0: automatically included section variable(s) unused in theorem `TuranUniversality.Structural.Rooted.place_eq_data`:
+  [DecidableEq V]
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq V] [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Structural/RootedRecords.lean:58:0: automatically included section variable(s) unused in theorem `TuranUniversality.Structural.Rooted.goodEdge_declares`:
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Structural/RootedRecords.lean:61:0: automatically included section variable(s) unused in theorem `TuranUniversality.Structural.Rooted.declares_unique`:
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [9267/9355] Replayed TuranUniversality.Structural.RootedWitness
+warning: TuranUniversality/Structural/RootedWitness.lean:19:5: Ambiguous namespace `Cube`: it is interpreted as `_root_.TuranUniversality.Structural.Cube` because this `open` occurs inside `namespace TuranUniversality.Structural.Rooted`, while `_root_.Cube` is silently not opened. Specify the namespace unambiguously, e.g. `_root_.TuranUniversality.Structural.Cube`. The warning can sometimes also be addressed by moving the `open` outside of the surrounding `namespace`.
+
+Note: This linter can be disabled with `set_option linter.ambiguousOpen false`
+⚠ [9268/9355] Replayed TuranUniversality.Structural.RootedTransport
+warning: TuranUniversality/Structural/RootedTransport.lean:16:5: Ambiguous namespace `Cube`: it is interpreted as `_root_.TuranUniversality.Structural.Cube` because this `open` occurs inside `namespace TuranUniversality.Structural.Rooted`, while `_root_.Cube` is silently not opened. Specify the namespace unambiguously, e.g. `_root_.TuranUniversality.Structural.Cube`. The warning can sometimes also be addressed by moving the `open` outside of the surrounding `namespace`.
+
+Note: This linter can be disabled with `set_option linter.ambiguousOpen false`
+warning: TuranUniversality/Structural/RootedTransport.lean:21:0: automatically included section variable(s) unused in theorem `TuranUniversality.Structural.Rooted.place_comp`:
+  [DecidableEq V]
+  [DecidableEq W]
+  [Fintype V]
+  [Fintype W]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq V] [DecidableEq W] [Fintype V] [Fintype W] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Structural/RootedTransport.lean:24:48: This simp argument is unused:
+  Function.comp_def
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [place, Selector.rootedVertex, h, Compiled.mapData]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: TuranUniversality/Structural/RootedTransport.lean:26:42: This simp argument is unused:
+  Function.comp_def
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [place, Selector.rootedVertex, h, Compiled.mapData]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: TuranUniversality/Structural/RootedTransport.lean:31:8: automatically included section variable(s) unused in theorem `TuranUniversality.Structural.Rooted.pullbackRooting_inverse`:
+  [DecidableEq V]
+  [DecidableEq W]
+  [Fintype V]
+  [Fintype W]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq V] [DecidableEq W] [Fintype V] [Fintype W] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Structural/RootedTransport.lean:35:0: automatically included section variable(s) unused in theorem `TuranUniversality.Structural.Rooted.mapped_inverse`:
+  [DecidableEq V]
+  [DecidableEq W]
+  [Fintype V]
+  [Fintype W]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq V] [DecidableEq W] [Fintype V] [Fintype W] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [9269/9355] Replayed TuranUniversality.Structural.FiniteBasis
+warning: TuranUniversality/Structural/FiniteBasis.lean:16:5: Ambiguous namespace `Cube`: it is interpreted as `_root_.TuranUniversality.Structural.Cube` because this `open` occurs inside `namespace TuranUniversality.Structural.Rooted`, while `_root_.Cube` is silently not opened. Specify the namespace unambiguously, e.g. `_root_.TuranUniversality.Structural.Cube`. The warning can sometimes also be addressed by moving the `open` outside of the surrounding `namespace`.
+
+Note: This linter can be disabled with `set_option linter.ambiguousOpen false`
+⚠ [9270/9355] Replayed TuranUniversality.Structural.Canonical
+warning: TuranUniversality/Structural/Canonical.lean:81:0: automatically included section variable(s) unused in theorem `TuranUniversality.Structural.Compiled.standardLabels_injective`:
+  [DecidableEq V]
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq V] [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Structural/Canonical.lean:95:0: automatically included section variable(s) unused in theorem `TuranUniversality.Structural.Compiled.standard_place`:
+  [DecidableEq V]
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq V] [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [9271/9355] Replayed TuranUniversality.Structural.CanonicalWeights
+warning: TuranUniversality/Structural/CanonicalWeights.lean:70:4: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: TuranUniversality/Structural/CanonicalWeights.lean:71:4: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [9272/9355] Replayed TuranUniversality.Structural.OrdinaryFamily
+warning: TuranUniversality/Structural/OrdinaryFamily.lean:84:0: automatically included section variable(s) unused in theorem `TuranUniversality.Structural.Ordinary.free_iff_homFree`:
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Structural/OrdinaryFamily.lean:149:6: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: TuranUniversality/Structural/OrdinaryFamily.lean:150:6: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [9275/9355] Replayed TuranUniversality.Structural.PhaseMixtureWeights
+warning: TuranUniversality/Structural/PhaseMixtureWeights.lean:60:44: This simp argument is unused:
+  Sum.inr_ne_inl
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Sum.inr.injEq, Sum.inl_ne_inr, hn, ite_false, Finset.sum_const_zero, zero_add, Subtype.val_inj]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: TuranUniversality/Structural/PhaseMixtureWeights.lean:71:44: This simp argument is unused:
+  Sum.inr_ne_inl
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Sum.inr.injEq, Sum.inl_ne_inr, hn, ite_false, Finset.sum_const_zero, zero_add, add_zero,
+    Subtype.val_inj]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [9278/9355] Replayed TuranUniversality.Structural.PhaseApproximationBasic
+warning: TuranUniversality/Structural/PhaseApproximationBasic.lean:26:8: automatically included section variable(s) unused in theorem `TuranUniversality.Structural.RecordApproximation.ofGraph_inl_mem_active`:
+  [Fintype W]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype W] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Structural/PhaseApproximationBasic.lean:30:8: automatically included section variable(s) unused in theorem `TuranUniversality.Structural.RecordApproximation.ofGraph_inr_not_mem_active`:
+  [Fintype W]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype W] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Structural/PhaseApproximationBasic.lean:81:0: automatically included section variable(s) unused in theorem `TuranUniversality.Structural.RecordApproximation.ofGraph_other_phase`:
+  [Fintype W]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype W] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Structural/PhaseApproximationBasic.lean:117:58: This simp argument is unused:
+  Sum.elim_inl
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Compiled.optimalWeights, RecordApproximation.neutralEquiv_val, RecordApproximation.mixtureWeights,
+    Sum.elim_inr, optimalRoleWeight, ← Finset.mul_sum, hy, mul_one]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [9279/9355] Replayed TuranUniversality.Structural.PhaseApproximation
+warning: TuranUniversality/Structural/PhaseApproximation.lean:40:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: TuranUniversality/Structural/PhaseApproximation.lean:54:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: TuranUniversality/Structural/PhaseApproximation.lean:60:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: TuranUniversality/Structural/PhaseApproximation.lean:67:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: TuranUniversality/Structural/PhaseApproximation.lean:133:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [9280/9355] Replayed TuranUniversality.Structural.ReadbackNormalization
+warning: TuranUniversality/Structural/ReadbackNormalization.lean:21:5: Ambiguous namespace `Cube`: it is interpreted as `_root_.TuranUniversality.Structural.Cube` because this `open` occurs inside `namespace TuranUniversality.Structural.Readback`, while `_root_.Cube` is silently not opened. Specify the namespace unambiguously, e.g. `_root_.TuranUniversality.Structural.Cube`. The warning can sometimes also be addressed by moving the `open` outside of the surrounding `namespace`.
+
+Note: This linter can be disabled with `set_option linter.ambiguousOpen false`
+warning: TuranUniversality/Structural/ReadbackNormalization.lean:69:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [9282/9355] Replayed TuranUniversality.Structural.PhaseReadbackWeights
+warning: TuranUniversality/Structural/PhaseReadbackWeights.lean:51:0: automatically included section variable(s) unused in theorem `TuranUniversality.Structural.PhaseRoles.rootProduct_optimalWeights`:
+  [DecidableEq V]
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq V] [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [9283/9355] Replayed TuranUniversality.Structural.PhaseInnerProfiles
+warning: TuranUniversality/Structural/PhaseInnerProfiles.lean:24:0: automatically included section variable(s) unused in theorem `TuranUniversality.Structural.LegalObject.projection_eq_phase`:
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Structural/PhaseInnerProfiles.lean:32:0: automatically included section variable(s) unused in theorem `TuranUniversality.Structural.LegalObject.active_inner_homFree`:
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Structural/PhaseInnerProfiles.lean:42:0: automatically included section variable(s) unused in theorem `TuranUniversality.Structural.LegalObject.innerDensity_scale`:
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [9286/9355] Replayed TuranUniversality.Structural.NeutralRoles
+warning: TuranUniversality/Structural/NeutralRoles.lean:90:23: This simp argument is unused:
+  Function.comp_def
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [liftRole, hθ] at hr
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: TuranUniversality/Structural/NeutralRoles.lean:93:23: This simp argument is unused:
+  Function.comp_def
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [liftRole, hθ] at hc
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: TuranUniversality/Structural/NeutralRoles.lean:189:46: This simp argument is unused:
+  Sum.inr_ne_inl
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Sum.inr.injEq, Sum.inl_ne_inr, ite_false, Finset.sum_const_zero, zero_add]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [9291/9355] Replayed TuranUniversality.Structural.PhaseTopology
+warning: TuranUniversality/Structural/PhaseTopology.lean:33:4: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: TuranUniversality/Structural/PhaseTopology.lean:34:62: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+⚠ [9292/9355] Replayed TuranUniversality.Structural.CanonicalLocal
+warning: TuranUniversality/Structural/CanonicalLocal.lean:17:5: Ambiguous namespace `Cube`: it is interpreted as `_root_.TuranUniversality.Structural.Cube` because this `open` occurs inside `namespace TuranUniversality.Structural.Roles`, while `_root_.Cube` is silently not opened. Specify the namespace unambiguously, e.g. `_root_.TuranUniversality.Structural.Cube`. The warning can sometimes also be addressed by moving the `open` outside of the surrounding `namespace`.
+
+Note: This linter can be disabled with `set_option linter.ambiguousOpen false`
+warning: TuranUniversality/Structural/CanonicalLocal.lean:24:8: automatically included section variable(s) unused in theorem `TuranUniversality.Structural.Roles.mem_dataSet`:
+  [DecidableEq V]
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq V] [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Structural/CanonicalLocal.lean:63:0: automatically included section variable(s) unused in theorem `TuranUniversality.Structural.Roles.declares_unique`:
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Structural/CanonicalLocal.lean:184:0: automatically included section variable(s) unused in theorem `TuranUniversality.Structural.Roles.dataSet_congr`:
+  [DecidableEq V]
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq V] [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Structural/CanonicalLocal.lean:190:0: automatically included section variable(s) unused in theorem `TuranUniversality.Structural.Roles.image_congr`:
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [9293/9355] Replayed TuranUniversality.Structural.CanonicalWitness
+warning: TuranUniversality/Structural/CanonicalWitness.lean:18:5: Ambiguous namespace `Cube`: it is interpreted as `_root_.TuranUniversality.Structural.Cube` because this `open` occurs inside `namespace TuranUniversality.Structural.Roles`, while `_root_.Cube` is silently not opened. Specify the namespace unambiguously, e.g. `_root_.TuranUniversality.Structural.Cube`. The warning can sometimes also be addressed by moving the `open` outside of the surrounding `namespace`.
+
+Note: This linter can be disabled with `set_option linter.ambiguousOpen false`
+warning: TuranUniversality/Structural/CanonicalWitness.lean:73:65: This simp argument is unused:
+  Label.card
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Finset.card_product, Nat.mul_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [9294/9355] Replayed TuranUniversality.Structural.VertexRoleWitness
+warning: TuranUniversality/Structural/VertexRoleWitness.lean:97:45: This simp argument is unused:
+  roots_card
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Fintype.card_option, Nat.mul_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [9295/9355] Replayed TuranUniversality.Structural.RoleActions
+warning: TuranUniversality/Structural/RoleActions.lean:23:0: automatically included section variable(s) unused in theorem `TuranUniversality.Structural.Roles.liftRoot_symm`:
+  [DecidableEq V]
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq V] [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Structural/RoleActions.lean:27:0: automatically included section variable(s) unused in theorem `TuranUniversality.Structural.Roles.place_renameRoles`:
+  [DecidableEq V]
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq V] [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Structural/RoleActions.lean:70:0: automatically included section variable(s) unused in theorem `TuranUniversality.Structural.Roles.liftRoot_block_susp`:
+  [DecidableEq V]
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq V] [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Structural/RoleActions.lean:74:0: automatically included section variable(s) unused in theorem `TuranUniversality.Structural.Roles.liftRoot_block_code`:
+  [DecidableEq V]
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq V] [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Structural/RoleActions.lean:79:0: automatically included section variable(s) unused in theorem `TuranUniversality.Structural.Roles.liftRoot_block_data`:
+  [DecidableEq V]
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq V] [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [9296/9355] Replayed TuranUniversality.Structural.FrameCanonicalRigidity
+warning: TuranUniversality/Structural/FrameCanonicalRigidity.lean:23:0: automatically included section variable(s) unused in theorem `TuranUniversality.Structural.Roles.place_eq_root`:
+  [DecidableEq V]
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq V] [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [9298/9355] Replayed TuranUniversality.Structural.CanonicalRestriction
+warning: TuranUniversality/Structural/CanonicalRestriction.lean:19:8: automatically included section variable(s) unused in theorem `TuranUniversality.RGraph.mem_within`:
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Structural/CanonicalRestriction.lean:39:0: automatically included section variable(s) unused in theorem `TuranUniversality.RGraph.subsetRetraction_val`:
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [9300/9355] Replayed TuranUniversality.Structural.ReplacementFrameTransport
+warning: TuranUniversality/Structural/ReplacementFrameTransport.lean:69:0: automatically included section variable(s) unused in theorem `TuranUniversality.Structural.Roles.HasReplacementFrame.map`:
+  [Fintype V]
+  [Fintype W]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] [Fintype W] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [9301/9355] Replayed TuranUniversality.Structural.CommonFrameNormalize
+warning: TuranUniversality/Structural/CommonFrameNormalize.lean:21:0: automatically included section variable(s) unused in theorem `TuranUniversality.Structural.Roles.liftRoot_root`:
+  [DecidableEq V]
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq V] [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [9303/9355] Replayed TuranUniversality.Structural.NeutralModels
+warning: TuranUniversality/Structural/NeutralModels.lean:28:8: automatically included section variable(s) unused in theorem `TuranUniversality.Structural.NeutralRoles.collapse_sampleVertex`:
+  [DecidableEq V]
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq V] [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Structural/NeutralModels.lean:35:8: automatically included section variable(s) unused in theorem `TuranUniversality.Structural.NeutralRoles.collapse_mapData`:
+  [DecidableEq V]
+  [DecidableEq W]
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq V] [DecidableEq W] [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Structural/NeutralModels.lean:60:0: automatically included section variable(s) unused in theorem `TuranUniversality.Structural.NeutralRoles.sample_roleOfRooting`:
+  [DecidableEq V]
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq V] [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Structural/NeutralModels.lean:63:50: This simp argument is unused:
+  Rooted.place_none ρ h
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [roleOfRooting, h, sampleVertex]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: TuranUniversality/Structural/NeutralModels.lean:65:29: This simp argument is unused:
+  Rooted.place_root ρ h
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [roleOfRooting, h, sampleVertex, PhaseRoles.rootVertex]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: TuranUniversality/Structural/NeutralModels.lean:85:0: automatically included section variable(s) unused in theorem `TuranUniversality.Structural.NeutralRoles.compiled_edge_pattern`:
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [9307/9355] Replayed TuranUniversality.Effective.StructuralEdges
+warning: TuranUniversality/Effective/StructuralEdges.lean:71:8: This simp argument is unused:
+  Sum.isRight_inr
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [rootEquiv_right, Nat.add_sub_cancel_left, Finset.mem_disjSum, Sum.getRight_inr, mem_support_image]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: TuranUniversality/Effective/StructuralEdges.lean:71:25: This simp argument is unused:
+  Sum.getRight_inr
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [rootEquiv_right, Nat.add_sub_cancel_left, Finset.mem_disjSum, Sum.isRight_inr, mem_support_image]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [9316/9355] Replayed TuranUniversality.Uniformity.Thresholds
+warning: TuranUniversality/Uniformity/Thresholds.lean:30:6: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: TuranUniversality/Uniformity/Thresholds.lean:30:6: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+⚠ [9326/9355] Replayed TuranUniversality.Structural.VertexExtensionThreshold
+warning: TuranUniversality/Structural/VertexExtensionThreshold.lean:71:22: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [9327/9355] Replayed TuranUniversality.Structural.FrameThreshold
+warning: TuranUniversality/Structural/FrameThreshold.lean:38:2: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: TuranUniversality/Structural/FrameThreshold.lean:41:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: TuranUniversality/Structural/FrameThreshold.lean:42:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [9329/9355] Replayed TuranUniversality.Structural.FrameDensity
+warning: TuranUniversality/Structural/FrameDensity.lean:54:0: automatically included section variable(s) unused in theorem `TuranUniversality.Structural.FrameDensity.rootProduct_tendsto`:
+  [(i : I) → DecidableEq (X i)]
+  [(i : I) → Fintype (X i)]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [(i : I) → DecidableEq (X i)] [(i : I) → Fintype (X i)] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [9333/9355] Replayed TuranUniversality.Structural.NeutralApproximation
+warning: TuranUniversality/Structural/NeutralApproximation.lean:75:6: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp [O, object, LegalObject.empty, RGraph.empty] at h
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+⚠ [9337/9355] Replayed TuranUniversality.Structural.CompletedOrdinaryApproximation
+warning: TuranUniversality/Structural/CompletedOrdinaryApproximation.lean:67:6: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp only [RGraph.empty, Finset.notMem_empty] at he
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: TuranUniversality/Structural/CompletedOrdinaryApproximation.lean:68:59: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+⚠ [9345/9355] Replayed TuranUniversality.Structural.ActualData
+warning: TuranUniversality/Structural/ActualData.lean:31:8: automatically included section variable(s) unused in theorem `TuranUniversality.Structural.Rooted.mem_ordinaryData`:
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Structural/ActualData.lean:88:0: automatically included section variable(s) unused in theorem `TuranUniversality.Structural.LegalObject.restrict_activeMass`:
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Structural/ActualData.lean:95:0: automatically included section variable(s) unused in theorem `TuranUniversality.Structural.LegalObject.restrict_projection_polynomial`:
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TuranUniversality/Structural/ActualData.lean:117:0: automatically included section variable(s) unused in theorem `TuranUniversality.Structural.LegalObject.active_constant_innerDensity`:
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [9348/9355] Replayed TuranUniversality.Structural.NumberedProfile
+warning: TuranUniversality/Structural/NumberedProfile.lean:19:13: Ambiguous namespace `Computation`: it is interpreted as `_root_.TuranUniversality.Computation` because this `open` occurs inside `namespace TuranUniversality.Structural.Fixed`, while `_root_.Computation` is silently not opened. Specify the namespace unambiguously, e.g. `_root_.TuranUniversality.Computation`. The warning can sometimes also be addressed by moving the `open` outside of the surrounding `namespace`.
+
+Note: This linter can be disabled with `set_option linter.ambiguousOpen false`
+⚠ [9349/9355] Built Challenge (4.8s)
+warning: Challenge.lean:369:10: Variable name `e` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _e
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: Challenge.lean:419:8: declaration uses `sorry`
+warning: Challenge.lean:436:8: declaration uses `sorry`
+warning: Challenge.lean:535:8: declaration uses `sorry`
+✔ [9351/9355] Built TuranUniversality.Structural.Main (9.9s)
+✔ [9352/9355] Built TuranUniversality (5.2s)
+✔ [9354/9355] Built Solution (5.5s)
+Build completed successfully (9355 jobs).

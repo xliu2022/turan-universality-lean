@@ -1,0 +1,23 @@
+{
+  "command": [
+    "lake",
+    "env",
+    "lean",
+    "verification/combined/AuditFull.lean"
+  ],
+  "cwd": "/workspace/scratch/ec525e9616f4/palomar-universality-123/turan-universality-lean",
+  "lean_num_threads": 2,
+  "source_snapshot": "verification/combined/axiom-audit-full-01-sources.json",
+  "source_snapshot_sha256": "8046482545bb3b255c826cd49a7f442fc995e53c34a467426bca13d83367310f",
+  "started_utc": "2026-11-25T05:59:04.763621+00:00",
+  "timeout_seconds": 1200,
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 4.988,
+  "user_seconds": 3.466,
+  "system_seconds": 1.574,
+  "maximum_rss_kib": 3735008,
+  "finished_utc": "2026-11-25T05:59:19.166169+00:00",
+  "log": "verification/combined/axiom-audit-full-01.log",
+  "log_sha256": "c5166c83619d0411d25d529212e2c5f34ead226ac9a82693bd18eca992a3505d"
+}

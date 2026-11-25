@@ -1,0 +1,27 @@
+{
+  "command": [
+    "lake",
+    "comparator",
+    "--config",
+    ".verification-work/comparator-local.json",
+    "--challenge-from-export",
+    ".verification-work/challenge.ndjson",
+    "--solution-from-export",
+    ".verification-work/solution.ndjson"
+  ],
+  "cwd": "/workspace/scratch/ec525e9616f4/palomar-universality-123/turan-universality-lean",
+  "lean_num_threads": 2,
+  "source_snapshot": "verification/combined/comparator-from-exports-01-sources.json",
+  "source_snapshot_sha256": "8046482545bb3b255c826cd49a7f442fc995e53c34a467426bca13d83367310f",
+  "started_utc": "2026-11-25T05:57:00.530478+00:00",
+  "timeout_seconds": 1200,
+  "exit_code": 1,
+  "timed_out": false,
+  "elapsed_seconds": 10.008,
+  "user_seconds": 9.25,
+  "system_seconds": 0.615,
+  "maximum_rss_kib": 521148,
+  "finished_utc": "2026-11-25T05:57:10.540763+00:00",
+  "log": "verification/combined/comparator-from-exports-01.log",
+  "log_sha256": "bff4bbf71a0b76d9282dc0a1855ec7b7cecca64f0405b2b83892d633496a7c31"
+}

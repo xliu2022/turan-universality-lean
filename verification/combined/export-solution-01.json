@@ -1,0 +1,26 @@
+{
+  "command": [
+    "python3",
+    "scripts/export-theorems.py",
+    ".verification-work/solution.ndjson",
+    "Solution",
+    "TuranUniversality.Registry.main_theorem",
+    "TuranUniversality.Registry.numerical_main_theorem",
+    "TuranUniversality.Registry.structural_main_theorem"
+  ],
+  "cwd": "/workspace/scratch/ec525e9616f4/palomar-universality-123/turan-universality-lean",
+  "lean_num_threads": 2,
+  "source_snapshot": "verification/combined/export-solution-01-sources.json",
+  "source_snapshot_sha256": "8046482545bb3b255c826cd49a7f442fc995e53c34a467426bca13d83367310f",
+  "started_utc": "2026-11-25T05:53:51.687742+00:00",
+  "timeout_seconds": 1200,
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 71.714,
+  "user_seconds": 22.148,
+  "system_seconds": 17.299,
+  "maximum_rss_kib": 5458068,
+  "finished_utc": "2026-11-25T05:55:03.402072+00:00",
+  "log": "verification/combined/export-solution-01.log",
+  "log_sha256": "8064adabc2ff54f3cdca51e316999b440be2e330d82251fb3b7251faff724cd4"
+}

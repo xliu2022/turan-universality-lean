@@ -1,0 +1,166 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/mathlib-initiative/formalization.yaml/main/schema/formalization.schema.json
+version: v0.4
+project:
+  name: Turing Universality in Hypergraph Turán Theory
+  description: 'This project formalizes Theorems 1.1, 1.2, and 1.3 of the supplied V4 manuscript on Turing universality
+    in hypergraph Turán theory. Theorem 1.1 gives a primitive-recursive compiler from binary words to single finite
+    simple three-uniform hypergraphs: ordinary Turán density equals a fixed rational threshold exactly on nonhalting
+    inputs and exceeds it exactly on halting inputs. Theorem 1.2 extends the density dichotomy to finite forbidden
+    families in every uniformity at least three, with joint primitive-recursive compilers, exact density scaling,
+    and input-independent globally optimal templates whose blowups avoid the compiled families. Theorem 1.3 provides
+    a jointly primitive-recursive structural compiler above a fixed rank threshold. Nonhalting inputs have one ordinary
+    extremal profile and edge-edit stability with fixed finite role patterns and exact balanced class sizes. Halting
+    inputs have two disjoint nonempty compact phases, separated by fixed finite test graphs, each homeomorphic to
+    the entire inner extremal space. The package includes the finite computation, obstruction, extremal, suspension,
+    and effective-construction proofs needed for these three results. One independent Challenge and one Comparator
+    configuration select all three theorem declarations.'
+  authors:
+  - Xizhi Liu
+  responsible_maintainers:
+  - Xizhi Liu
+  license: Apache-2.0
+classification:
+  arxiv:
+  - math.CO
+  - math.LO
+  msc2020:
+  - 05C65
+  - 05C35
+  - 03D35
+sources:
+- title: Turing universality, computability, and incompleteness in hypergraph Turán theory
+  authors:
+  - Heng Li
+  - Xizhi Liu
+  type: paper
+  location: V4 manuscript dated 8 November 2026; Theorems 1.1, 1.2, and 1.3; source/turan_universality_V4.tex
+  relationship: formalizes
+  note: The registered statement surface prepared by this package consists only of Theorems 1.1–1.3. Each retains
+    its own existentially quantified witnesses; collecting the three declarations in one configuration does not
+    add an assertion that their independently quantified witnesses are identical. The proof development and explicit
+    fidelity notes describe the chosen finite encodings and machine presentation. Theorem 1.4, object-language ZFC
+    internalization, logical independence, later computability-spectrum results, and transcendental-density results
+    are outside this package's advertised theorem scope.
+  license: Source authors retain their rights; the formalization license does not relicense the manuscript.
+related_formalizations:
+- id: https://github.com/xliu2022/improved-sidorenko-lean/tree/ba6f109bf01436ca15e55fdf5d35dbea85ffd9c9
+  relationship: adapts
+  note: Finite-hypergraph definitions and ordinary extremal-density foundations in TuranUniversality/Hypergraph/Basic.lean
+    and TuranUniversality/Density/Extremal.lean were adapted from this Apache-2.0 formalization. Original notices
+    and the exact commit attribution are retained in the source and NOTICE. Its main theorem is a different result.
+    Mathlib and its dependencies retain their own licenses.
+status:
+  scope: The combined Theorems 1.1–1.3 project has passed a current full Lake build, recursive statement/definition
+    comparison with no definition exemptions, permitted-axiom validation, and direct Lean and NanoDa replay of the
+    same merged proof export. Public and full-import audits confirm only the three standard axioms for all three
+    roots. Evidence is in verification/combined; mathematical fidelity and merge provenance are in verification/merge.
+    The ordinary sandboxed Comparator and its post-export kernel launch return exit 1 because bubblewrap cannot
+    create a NETLINK_ROUTE socket in this environment. Official full sandboxed verification, advisory con-ron acceptance,
+    human peer review, registry submission and acceptance are not claimed. Theorem 1.4 and whole-paper completion
+    remain outside this entry.
+  sorry_count: 0
+  sorry_in_definitions: 0
+  axioms:
+  - propext
+  - Classical.choice
+  - Quot.sound
+  main_results:
+  - declaration: TuranUniversality.Registry.main_theorem
+    file: Solution.lean
+    sorry_count: 0
+    axioms:
+    - propext
+    - Classical.choice
+    - Quot.sound
+    comparator_config: comparator.json
+    literature_dependencies: []
+  - declaration: TuranUniversality.Registry.numerical_main_theorem
+    file: Solution.lean
+    sorry_count: 0
+    axioms:
+    - propext
+    - Classical.choice
+    - Quot.sound
+    comparator_config: comparator.json
+    literature_dependencies: []
+  - declaration: TuranUniversality.Registry.structural_main_theorem
+    file: Solution.lean
+    sorry_count: 0
+    axioms:
+    - propext
+    - Classical.choice
+    - Quot.sound
+    comparator_config: comparator.json
+    literature_dependencies: []
+automation:
+  methods:
+  - method: agent
+    models:
+    - GPT-6 Astra Pro
+    framework: ChatGPT
+    tool_setup: Parallel agents inspected the supplied manuscript, constructed Lean proofs, compiled against pinned
+      Mathlib, audited theorem statements and axiom dependencies, and prepared the combined project and its verification
+      evidence. The local tools include Lean, Lake, the integrated Comparator, Lean export/replay tools, and NanoDa.
+    cost:
+      wall_time: not tracked
+      spend_usd: not tracked
+      hardware: Linux execution workspace
+    prompting_notes: Formalize the supplied mathematical results and prepare a complete, independently reviewable
+      Palomar-compatible project for Theorems 1.1–1.3, retaining precise source attribution and verification limits.
+  spend_usd: not tracked
+  notes: The user supplied the mathematical manuscript and directed the project. Human authorship and maintenance
+    are attributed to Xizhi Liu; material AI contributions are disclosed here. No independent human peer review
+    or separate source-author endorsement is inferred from author names. The historical separate-entry checks and
+    the new combined-entry checks are distinguished in the verification reports.
+fidelity:
+  divergences: Finite hypergraphs use labeled finite vertex types and ordinary injective forbidden-subgraph avoidance.
+    Turán density is defined as an infimum, with convergence of the ordinary normalized extremal sequence proved.
+    The explicit binary evaluator is specified using Mathlib partial-recursive program semantics and simulated by
+    a fixed finite-state two-sided tape machine, in place of the manuscript's one-sided two-track presentation.
+    Literal-word encoding and both directions of the correspondence between halting and finite local models are
+    proved. Private extensions add a vertex for every core pair, including already covered pairs; graph codes use
+    duplicate oriented private vertices and isolated diagonal vertices, with the required mutual homomorphisms proved.
+    Bounded obstruction bases enumerate finite labeled graphs rather than isomorphism representatives. The grounded-energy
+    estimate uses constant four, and the subsequent absorption inequalities use that proved constant. For Theorem
+    1.2, the suspension checker directly tests that a complete three-graph link admits no homomorphism from the
+    compiled input graph. The family compiler is primitive recursive jointly in rank and input, and the template
+    compiler is primitive recursive in rank, a stronger uniformity assertion than separate fixed-r primitive recursion.
+    Higher-uniformity templates use explicit integer clone counts realizing the intended optimal masses; global
+    optimality is expressed as an upper bound for every real probability weighting with equality at the uniform
+    weighting. For Theorem 1.3, ordinary extremal objects are profiles in the compactification by all finite homomorphism-density
+    coordinates. Finite role patterns use multisets, allowing repeated roles in an edge. Balanced class counts have
+    the exact total and each is a floor or ceiling of the fixed proportion. The stability conclusion compares graphs
+    on their original vertex sets. Both nonempty compact phases preserve the entire inner extremal space by homeomorphisms,
+    and the whole outer extremal space is homeomorphic to the product of Bool with the inner extremal space. No
+    object-language ZFC or independence conclusion is included.
+review:
+  status: agent-reviewed
+  reviewers:
+  - 'ChatGPT / GPT-6 Astra Pro: separate statement-fidelity, merge and packaging reviewers'
+  notes: Separate assistant agents reviewed the paper-to-statement correspondence, the merged declarations, minimal
+    source closure, metadata and CI. The merged entry was also rebuilt and mechanically checked as recorded in verification/combined/RESULTS.json.
+    Recursive comparison and permitted-axiom validation passed before the preserved sandbox failure at kernel launch;
+    both direct kernels separately accepted the exact merged Solution export. Source and semantic review is documented
+    in verification/merge. This is agent review and local mechanical evidence, not independent human peer review,
+    official full sandboxed verification, Palomar editorial approval or registry acceptance.
+alignment:
+  namespace: TuranUniversality.Registry
+  statements:
+  - source: V4 Theorem 1.1
+    lean: TuranUniversality.Registry.main_theorem
+    module: Solution
+    status: proved; merged comparison, axiom validation and direct Lean/NanoDa replay passed
+    note: Single forbidden three-graph compiler with the ordinary halting/density dichotomy.
+  - source: V4 Theorem 1.2
+    lean: TuranUniversality.Registry.numerical_main_theorem
+    module: Solution
+    status: proved; merged comparison, axiom validation and direct Lean/NanoDa replay passed
+    note: All ranks at least three, exact scaling, and input-independent globally optimal free templates.
+  - source: V4 Theorem 1.3
+    lean: TuranUniversality.Registry.structural_main_theorem
+    module: Solution
+    status: proved; merged comparison, axiom validation and direct Lean/NanoDa replay passed
+    note: Fixed-rank-threshold structural compiler, singleton profile and edit stability, and two compact homeomorphic
+      phases.
+acknowledgements: Mathlib, Lean, their dependencies and independent proof checkers provide the foundational libraries
+  and verification infrastructure. Reused formal source is attributed in NOTICE and the affected modules.

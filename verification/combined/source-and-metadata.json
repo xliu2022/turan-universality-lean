@@ -1,0 +1,36 @@
+{
+  "recorded_utc": "2026-11-25T06:02:46.789552+00:00",
+  "metadata_schema_valid": true,
+  "schema": "verification/policy/formalization-v0.4.schema.json",
+  "schema_sha256": "25ff6b25ca4511635aff4443cf20480c15e59dddf19591c730950b442ea54fce",
+  "formalization_yaml_sha256": "1772b40d6603a25a1a08a8b3cc8f15724e34ed48e3285cf0789c99e83bbc3874",
+  "expected_theorem_names": [
+    "TuranUniversality.Registry.main_theorem",
+    "TuranUniversality.Registry.numerical_main_theorem",
+    "TuranUniversality.Registry.structural_main_theorem"
+  ],
+  "metadata_target_alignment": true,
+  "preserved_proof_module_count": 419,
+  "all_copied_proof_hashes_unchanged": true,
+  "lean_source_policy_exit_code": 0,
+  "lean_source_count": 424,
+  "intentional_challenge_placeholders": 3,
+  "proof_holes_outside_challenge": 0,
+  "challenge_lines": 538,
+  "challenge_bytes": 21767,
+  "challenge_source_imports": [
+    "Mathlib.Data.Finset.Card",
+    "Mathlib.Data.Finset.Powerset",
+    "Mathlib.Data.Finset.SymmDiff",
+    "Mathlib.Data.Nat.Find",
+    "Mathlib.Data.Fintype.Pi",
+    "Mathlib.Algebra.Order.BigOperators.Expect",
+    "Mathlib.Algebra.Order.Floor.Semiring",
+    "Mathlib.Topology.Homeomorph.Lemmas",
+    "Mathlib.Topology.Instances.Real.Lemmas",
+    "Mathlib.Topology.Order.MonotoneConvergence",
+    "Mathlib.Computability.Primrec.List",
+    "Mathlib.Computability.Halting"
+  ],
+  "scope": "Upstream schema, target/metadata alignment, local source policy and exact source preservation; not the full official Palomar verifier."
+}

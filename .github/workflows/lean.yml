@@ -1,0 +1,49 @@
+name: Lean and combined statement verification
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  sources:
+    name: Source and metadata checks
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+      - name: Check source policy and the three deliberate Challenge placeholders
+        run: python3 scripts/check-lean-sources.py
+      - name: Validate metadata against the upstream schema
+        run: |
+          python3 -m pip install --disable-pip-version-check check-jsonschema
+          check-jsonschema --schemafile https://raw.githubusercontent.com/mathlib-initiative/formalization.yaml/main/schema/formalization.schema.json formalization.yaml
+
+  proof:
+    name: Theorems 1.1–1.3 build, comparison, and Lean/NanoDa replay
+    runs-on: ubuntu-24.04
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+      - name: Check sources before evaluating Lean code
+        run: python3 scripts/check-lean-sources.py
+      - uses: leanprover/lean-action@38fbc41a8c28c4cbaec22d7f7de508ec2e7c0dd9
+        with:
+          build: false
+      - name: Install the sandbox on the disposable runner
+        run: |
+          sudo apt-get update -qq >/dev/null
+          sudo apt-get install -y -qq bubblewrap >/dev/null
+          sudo sysctl -w kernel.apparmor_restrict_unprivileged_userns=0
+      - name: Compare all three statements and verify the combined proof
+        run: ./scripts/verify-comparator.sh comparator.json

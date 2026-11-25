@@ -1,0 +1,24 @@
+{
+  "command": [
+    "lake",
+    "env",
+    "leanchecker",
+    "--from-export",
+    ".verification-work/solution.ndjson"
+  ],
+  "cwd": "/workspace/scratch/ec525e9616f4/palomar-universality-123/turan-universality-lean",
+  "lean_num_threads": 2,
+  "source_snapshot": "verification/combined/leanchecker-01-sources.json",
+  "source_snapshot_sha256": "8046482545bb3b255c826cd49a7f442fc995e53c34a467426bca13d83367310f",
+  "started_utc": "2026-11-25T05:57:21.445449+00:00",
+  "timeout_seconds": 1200,
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 67.625,
+  "user_seconds": 62.907,
+  "system_seconds": 3.004,
+  "maximum_rss_kib": 1106548,
+  "finished_utc": "2026-11-25T05:58:29.071156+00:00",
+  "log": "verification/combined/leanchecker-01.log",
+  "log_sha256": "b4a5a2119e1d34b46527d63317f417c74261b65eeb93f14026389da2519c2ead"
+}

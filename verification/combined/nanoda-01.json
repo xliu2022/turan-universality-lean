@@ -1,0 +1,21 @@
+{
+  "command": [
+    "nanoda_bin",
+    ".verification-work/nanoda.json"
+  ],
+  "cwd": "/workspace/scratch/ec525e9616f4/palomar-universality-123/turan-universality-lean",
+  "lean_num_threads": 2,
+  "source_snapshot": "verification/combined/nanoda-01-sources.json",
+  "source_snapshot_sha256": "8046482545bb3b255c826cd49a7f442fc995e53c34a467426bca13d83367310f",
+  "started_utc": "2026-11-25T05:57:54.333483+00:00",
+  "timeout_seconds": 1200,
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 27.417,
+  "user_seconds": 47.251,
+  "system_seconds": 2.596,
+  "maximum_rss_kib": 1003912,
+  "finished_utc": "2026-11-25T05:58:56.488166+00:00",
+  "log": "verification/combined/nanoda-01.log",
+  "log_sha256": "08c3c2623818b3fb1af8c975d771827fff6c517abc767c000faf699aa2354b6d"
+}

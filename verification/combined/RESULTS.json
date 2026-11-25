@@ -1,0 +1,391 @@
+{
+  "recorded_utc": "2026-11-25T06:02:47.114699+00:00",
+  "project": "Turing Universality in Hypergraph Turán Theory",
+  "formalization_author": "Xizhi Liu",
+  "responsible_maintainer": "Xizhi Liu",
+  "scope": "Theorems 1.1, 1.2 and 1.3, with the explicit fidelity qualifications in verification/merge/statement-fidelity.md.",
+  "theorems": [
+    "TuranUniversality.Registry.main_theorem",
+    "TuranUniversality.Registry.numerical_main_theorem",
+    "TuranUniversality.Registry.structural_main_theorem"
+  ],
+  "definition_exemptions": [],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ],
+  "toolchain": "leanprover/lean4:v4.35.0-rc2",
+  "lean_githash": "11acb17ec6b07a8f9e9173e6845197929540936b",
+  "mathlib_revision": "065356127b1dc0016f66b7283ce0ce2c4055aa55",
+  "tool_binary_sha256": {
+    "lean": "bf8d54e4714cc4b03d3f6bb34c83b7202b87e49c8bfcbff6895c085bb90ceb38",
+    "lake": "8ba83c98f76562d03b8dbc33f1057151ba6cbb121679dde76b2260ccc90495e1",
+    "leanexport": "c5bc1a10a21e22cbb3671d65987cdef2076833b14182d823ccb2153adf2fa954",
+    "leanchecker": "9e36e955a251b1313c8eb5b7fa101282d51df109d34d8bb7c1cfdf51985aba29",
+    "nanoda_bin": "8241c5e6baa29490aa118d382f97961b208ae730fdb96545c2abed74c9ece5a8"
+  },
+  "entry_sources": {
+    "Challenge.lean": "1a3a6f603600e00bad39e17d635638e10601dd7d316f16af5d7e64178ea121f1",
+    "Solution.lean": "11eba52fd9b074a6f7246ed94503041ac2ec3157ccee40e169083c5920fa4bd8",
+    "comparator.json": "281b74997761bf918d5e70581a11c907ad77aa1f6dc98fec0742d98861c8243d",
+    "TuranUniversality.lean": "9993d4d9aa0aa3cf53a193403785c65c6f89701266a29d00fdf2598190636da4",
+    "lakefile.toml": "537076d80f62b0c7a4a1a6607394cabcf604f94daf94193a6b673576b7aef181",
+    "lake-manifest.json": "faf9cd6100176f226617d166f5d81a082626027b9c8d3fbda199869326be749d",
+    "lean-toolchain": "8dc8d6f560141069d9073e370611716ef77ada0da8ffa37e2149f44b2e63ac7a"
+  },
+  "full_build": {
+    "accepted": true,
+    "metrics": {
+      "command": [
+        "lake",
+        "build"
+      ],
+      "cwd": "/workspace/scratch/ec525e9616f4/palomar-universality-123/turan-universality-lean",
+      "lean_num_threads": 2,
+      "source_snapshot": "verification/combined/build-01-sources.json",
+      "source_snapshot_sha256": "ee1e578c6bbfb41b6b510aad80985ae9bf848763de588f205b815fba7b6bd655",
+      "started_utc": "2026-11-25T05:52:20.874085+00:00",
+      "timeout_seconds": 1200,
+      "exit_code": 0,
+      "timed_out": false,
+      "elapsed_seconds": 29.602,
+      "user_seconds": 24.197,
+      "system_seconds": 11.714,
+      "maximum_rss_kib": 2940368,
+      "finished_utc": "2026-11-25T05:52:50.476116+00:00",
+      "log": "verification/combined/build-01.log",
+      "log_sha256": "d2c90c495888499521e9f83dd16701f47648c60adcb7f31f62a8441f12cc1190"
+    },
+    "reported_lake_jobs": 9355,
+    "cache_reuse": true,
+    "fresh_built_module_lines": [
+      "⚠ [9349/9355] Built Challenge (4.8s)",
+      "✔ [9351/9355] Built TuranUniversality.Structural.Main (9.9s)",
+      "✔ [9352/9355] Built TuranUniversality (5.2s)",
+      "✔ [9354/9355] Built Solution (5.5s)"
+    ],
+    "note": "Job total includes replayed cached dependencies and is not the number of newly compiled project modules."
+  },
+  "recursive_comparison": {
+    "passed": true,
+    "axiom_validation_passed": true,
+    "whole_command_exit_code": 1,
+    "metrics": {
+      "command": [
+        "lake",
+        "comparator",
+        "--config",
+        ".verification-work/comparator-local.json",
+        "--challenge-from-export",
+        ".verification-work/challenge.ndjson",
+        "--solution-from-export",
+        ".verification-work/solution.ndjson"
+      ],
+      "cwd": "/workspace/scratch/ec525e9616f4/palomar-universality-123/turan-universality-lean",
+      "lean_num_threads": 2,
+      "source_snapshot": "verification/combined/comparator-from-exports-01-sources.json",
+      "source_snapshot_sha256": "8046482545bb3b255c826cd49a7f442fc995e53c34a467426bca13d83367310f",
+      "started_utc": "2026-11-25T05:57:00.530478+00:00",
+      "timeout_seconds": 1200,
+      "exit_code": 1,
+      "timed_out": false,
+      "elapsed_seconds": 10.008,
+      "user_seconds": 9.25,
+      "system_seconds": 0.615,
+      "maximum_rss_kib": 521148,
+      "finished_utc": "2026-11-25T05:57:10.540763+00:00",
+      "log": "verification/combined/comparator-from-exports-01.log",
+      "log_sha256": "bff4bbf71a0b76d9282dc0a1855ec7b7cecca64f0405b2b83892d633496a7c31"
+    },
+    "basis": "In the exact pinned Lake/CLI/Check.lean, verifyMatch executes compareAt and checkAxioms via IO.ofExcept before runKernels. The actual log reaches runKernels for the configured three roots, then fails only at bubblewrap kernel startup. Thus comparison and axiom validation passed; the whole command did not.",
+    "control_flow_excerpt": "comparator-control-flow.txt",
+    "pinned_source_sha256": "55daf430e5adea38453b21798cbdf4cd099f66ec969494022a566a8ae098c00b",
+    "local_config": {
+      "challenge_module": "Challenge",
+      "solution_module": "Solution",
+      "theorem_names": [
+        "TuranUniversality.Registry.main_theorem",
+        "TuranUniversality.Registry.numerical_main_theorem",
+        "TuranUniversality.Registry.structural_main_theorem"
+      ],
+      "definition_names": [],
+      "permitted_axioms": [
+        "propext",
+        "Quot.sound",
+        "Classical.choice"
+      ],
+      "external_kernels": {
+        "nanoda": [
+          "/workspace/scratch/ec525e9616f4/toolchains/lean-4.35.0-rc2-linux/bin/nanoda_bin"
+        ]
+      }
+    }
+  },
+  "exports": {
+    "challenge": {
+      "path": ".verification-work/challenge.ndjson",
+      "bytes": 44596260,
+      "sha256": "2a68126023363447140d50874526b5ab94a09df569df9f9d74d935737480a301",
+      "compressed_path": "proof-exports/challenge.ndjson.gz",
+      "inventory": "export-inventory.json",
+      "metrics": {
+        "command": [
+          "python3",
+          "scripts/export-theorems.py",
+          ".verification-work/challenge.ndjson",
+          "Challenge",
+          "TuranUniversality.Registry.main_theorem",
+          "TuranUniversality.Registry.numerical_main_theorem",
+          "TuranUniversality.Registry.structural_main_theorem"
+        ],
+        "cwd": "/workspace/scratch/ec525e9616f4/palomar-universality-123/turan-universality-lean",
+        "lean_num_threads": 2,
+        "source_snapshot": "verification/combined/export-challenge-01-sources.json",
+        "source_snapshot_sha256": "8046482545bb3b255c826cd49a7f442fc995e53c34a467426bca13d83367310f",
+        "started_utc": "2026-11-25T05:53:24.693454+00:00",
+        "timeout_seconds": 1200,
+        "exit_code": 0,
+        "timed_out": false,
+        "elapsed_seconds": 6.436,
+        "user_seconds": 3.563,
+        "system_seconds": 1.558,
+        "maximum_rss_kib": 2152920,
+        "finished_utc": "2026-11-25T05:53:31.129202+00:00",
+        "log": "verification/combined/export-challenge-01.log",
+        "log_sha256": "3b45eeb2c486b4e3594fa716da1a65eb09445ee30c6b4b0e335c575ad09e4861"
+      }
+    },
+    "solution": {
+      "path": ".verification-work/solution.ndjson",
+      "bytes": 236462714,
+      "sha256": "2660318da2afd01adbbf4bab64bf77c2c8474e805b87229b25a61db48241b796",
+      "compressed_path": "proof-exports/solution.ndjson.gz",
+      "inventory": "export-inventory.json",
+      "metrics": {
+        "command": [
+          "python3",
+          "scripts/export-theorems.py",
+          ".verification-work/solution.ndjson",
+          "Solution",
+          "TuranUniversality.Registry.main_theorem",
+          "TuranUniversality.Registry.numerical_main_theorem",
+          "TuranUniversality.Registry.structural_main_theorem"
+        ],
+        "cwd": "/workspace/scratch/ec525e9616f4/palomar-universality-123/turan-universality-lean",
+        "lean_num_threads": 2,
+        "source_snapshot": "verification/combined/export-solution-01-sources.json",
+        "source_snapshot_sha256": "8046482545bb3b255c826cd49a7f442fc995e53c34a467426bca13d83367310f",
+        "started_utc": "2026-11-25T05:53:51.687742+00:00",
+        "timeout_seconds": 1200,
+        "exit_code": 0,
+        "timed_out": false,
+        "elapsed_seconds": 71.714,
+        "user_seconds": 22.148,
+        "system_seconds": 17.299,
+        "maximum_rss_kib": 5458068,
+        "finished_utc": "2026-11-25T05:55:03.402072+00:00",
+        "log": "verification/combined/export-solution-01.log",
+        "log_sha256": "8064adabc2ff54f3cdca51e316999b440be2e330d82251fb3b7251faff724cd4"
+      }
+    }
+  },
+  "direct_lean_kernel": {
+    "accepted": true,
+    "metrics": {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--from-export",
+        ".verification-work/solution.ndjson"
+      ],
+      "cwd": "/workspace/scratch/ec525e9616f4/palomar-universality-123/turan-universality-lean",
+      "lean_num_threads": 2,
+      "source_snapshot": "verification/combined/leanchecker-01-sources.json",
+      "source_snapshot_sha256": "8046482545bb3b255c826cd49a7f442fc995e53c34a467426bca13d83367310f",
+      "started_utc": "2026-11-25T05:57:21.445449+00:00",
+      "timeout_seconds": 1200,
+      "exit_code": 0,
+      "timed_out": false,
+      "elapsed_seconds": 67.625,
+      "user_seconds": 62.907,
+      "system_seconds": 3.004,
+      "maximum_rss_kib": 1106548,
+      "finished_utc": "2026-11-25T05:58:29.071156+00:00",
+      "log": "verification/combined/leanchecker-01.log",
+      "log_sha256": "b4a5a2119e1d34b46527d63317f417c74261b65eeb93f14026389da2519c2ead"
+    }
+  },
+  "direct_nanoda_kernel": {
+    "accepted": true,
+    "metrics": {
+      "command": [
+        "nanoda_bin",
+        ".verification-work/nanoda.json"
+      ],
+      "cwd": "/workspace/scratch/ec525e9616f4/palomar-universality-123/turan-universality-lean",
+      "lean_num_threads": 2,
+      "source_snapshot": "verification/combined/nanoda-01-sources.json",
+      "source_snapshot_sha256": "8046482545bb3b255c826cd49a7f442fc995e53c34a467426bca13d83367310f",
+      "started_utc": "2026-11-25T05:57:54.333483+00:00",
+      "timeout_seconds": 1200,
+      "exit_code": 0,
+      "timed_out": false,
+      "elapsed_seconds": 27.417,
+      "user_seconds": 47.251,
+      "system_seconds": 2.596,
+      "maximum_rss_kib": 1003912,
+      "finished_utc": "2026-11-25T05:58:56.488166+00:00",
+      "log": "verification/combined/nanoda-01.log",
+      "log_sha256": "08c3c2623818b3fb1af8c975d771827fff6c517abc767c000faf699aa2354b6d"
+    },
+    "configuration": {
+      "export_file_path": "/workspace/scratch/ec525e9616f4/palomar-universality-123/turan-universality-lean/.verification-work/solution.ndjson",
+      "permitted_axioms": [
+        "propext",
+        "Quot.sound",
+        "Classical.choice"
+      ],
+      "unpermitted_axiom_hard_error": true,
+      "num_threads": 2,
+      "nat_extension": true,
+      "string_extension": true,
+      "print_success_message": true
+    },
+    "checked_declarations": 33221,
+    "typechecker_errors": 0,
+    "nonfatal_pretty_printer_errors": [
+      "Unable to print axioms"
+    ]
+  },
+  "axiom_and_import_audits": [
+    {
+      "mode": "public",
+      "theorem_axioms": {
+        "TuranUniversality.Registry.main_theorem": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "TuranUniversality.Registry.numerical_main_theorem": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "TuranUniversality.Registry.structural_main_theorem": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "imported_modules": 11183,
+      "project_modules": 419,
+      "imports_challenge": false,
+      "record": "axiom-audit-public-01.json",
+      "import_closure": "public-import-closure.json"
+    },
+    {
+      "mode": "full",
+      "theorem_axioms": {
+        "TuranUniversality.Registry.main_theorem": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "TuranUniversality.Registry.numerical_main_theorem": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "TuranUniversality.Registry.structural_main_theorem": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "imported_modules": 11183,
+      "project_modules": 419,
+      "imports_challenge": false,
+      "record": "axiom-audit-full-01.json",
+      "import_closure": "full-import-closure.json"
+    }
+  ],
+  "export_inventory": {
+    "passed": true,
+    "file": "export-inventory.json",
+    "sha256": "a78f1b752ebcd0241caf5c3eb6d28eeda4b9485e227c465a53f83cbbac34d090",
+    "note": "Structural completeness audit, not a replacement for Comparator or either kernel."
+  },
+  "source_and_metadata_validation": {
+    "recorded_utc": "2026-11-25T06:02:46.789552+00:00",
+    "metadata_schema_valid": true,
+    "schema": "verification/policy/formalization-v0.4.schema.json",
+    "schema_sha256": "25ff6b25ca4511635aff4443cf20480c15e59dddf19591c730950b442ea54fce",
+    "formalization_yaml_sha256": "1772b40d6603a25a1a08a8b3cc8f15724e34ed48e3285cf0789c99e83bbc3874",
+    "expected_theorem_names": [
+      "TuranUniversality.Registry.main_theorem",
+      "TuranUniversality.Registry.numerical_main_theorem",
+      "TuranUniversality.Registry.structural_main_theorem"
+    ],
+    "metadata_target_alignment": true,
+    "preserved_proof_module_count": 419,
+    "all_copied_proof_hashes_unchanged": true,
+    "lean_source_policy_exit_code": 0,
+    "lean_source_count": 424,
+    "intentional_challenge_placeholders": 3,
+    "proof_holes_outside_challenge": 0,
+    "challenge_lines": 538,
+    "challenge_bytes": 21767,
+    "challenge_source_imports": [
+      "Mathlib.Data.Finset.Card",
+      "Mathlib.Data.Finset.Powerset",
+      "Mathlib.Data.Finset.SymmDiff",
+      "Mathlib.Data.Nat.Find",
+      "Mathlib.Data.Fintype.Pi",
+      "Mathlib.Algebra.Order.BigOperators.Expect",
+      "Mathlib.Algebra.Order.Floor.Semiring",
+      "Mathlib.Topology.Homeomorph.Lemmas",
+      "Mathlib.Topology.Instances.Real.Lemmas",
+      "Mathlib.Topology.Order.MonotoneConvergence",
+      "Mathlib.Computability.Primrec.List",
+      "Mathlib.Computability.Halting"
+    ],
+    "scope": "Upstream schema, target/metadata alignment, local source policy and exact source preservation; not the full official Palomar verifier."
+  },
+  "whole_sandboxed_default": {
+    "accepted": false,
+    "metrics": {
+      "command": [
+        "lake",
+        "comparator",
+        "--config",
+        "comparator.json"
+      ],
+      "cwd": "/workspace/scratch/ec525e9616f4/palomar-universality-123/turan-universality-lean",
+      "lean_num_threads": 2,
+      "source_snapshot": "verification/combined/sandbox-default-01-sources.json",
+      "source_snapshot_sha256": "ee1e578c6bbfb41b6b510aad80985ae9bf848763de588f205b815fba7b6bd655",
+      "started_utc": "2026-11-25T05:53:13.983059+00:00",
+      "timeout_seconds": 1200,
+      "exit_code": 1,
+      "timed_out": false,
+      "elapsed_seconds": 1.775,
+      "user_seconds": 0.048,
+      "system_seconds": 0.037,
+      "maximum_rss_kib": 106596,
+      "finished_utc": "2026-11-25T05:53:15.758589+00:00",
+      "log": "verification/combined/sandbox-default-01.log",
+      "log_sha256": "dac558dee2d209fbd7a6cef2892ebc94f82ead94b67290fa052138b2dbbf1e03"
+    },
+    "reason": "bubblewrap cannot create a NETLINK_ROUTE socket in this execution environment."
+  },
+  "advisory_con_ron": {
+    "run_for_merged_export": false,
+    "accepted": false
+  },
+  "official_palomar_preflight_completed": false,
+  "published_or_submitted": false,
+  "independent_human_review_claimed": false,
+  "summary": "The merged project compiles; recursive statement/definition comparison and permitted-axiom validation passed; both direct kernels accepted the identical complete Solution export. The official full sandboxed workflow and registry acceptance are not claimed."
+}
