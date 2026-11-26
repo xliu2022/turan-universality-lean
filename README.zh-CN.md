@@ -47,7 +47,14 @@ bash scripts/verify-comparator.sh
 
 Lean 固定为 `v4.35.0-rc2`，Mathlib 固定为
 `065356127b1dc0016f66b7283ce0ce2c4055aa55`。
-实际验证结论请看 `docs/VERIFICATION.md` 与 `verification/combined/RESULTS.json`。
+
+2026 年 11 月 25 日，Palomar 对提交 `971e68d2122c3901a73a6187ce96ffc97d0f0729`
+完成了正式机械验证。`comparator.json` 选定的三个定理均通过陈述比较和公理检查，
+Lean、NanoDa 和 con-ron 均接受了导出的证明。[官方验证记录](https://github.com/PalomarRegistry/PalomarSubmission/actions/runs/45563382429)
+
+此前准备发布包时，本地 `bubblewrap` 因无法打开 `NETLINK_ROUTE` 套接字而启动失败。
+同次准备中的本地构建、公理检查以及 Lean 和 NanoDa 的独立重放成功。
+详情见[验证历史](docs/VERIFICATION.md)和[本地检查记录](verification/combined/RESULTS.json)。
 
 ## 本次整理的准确范围
 
@@ -77,5 +84,3 @@ Palomar 选择 **`comparator.json`**，即可同时指定三个定理；无需�
 运行完整预检，并选择通过预检的准确提交。预检不会自动提交或注册；
 后续由维护者在 [Palomar 提交网站](https://submit.palomar-registry.org/)办理。
 发布包和验证记录保留原始整理时的发布状态。
-当前执行环境的完整沙箱命令因 `NETLINK_ROUTE` 权限限制无法启动；该失败已保留记录，
-不会被表述为官方全流程通过。所有本地检查的实际范围和结论均单独记载。

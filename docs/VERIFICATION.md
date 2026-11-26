@@ -1,10 +1,20 @@
 # Verification of the combined Theorems 1.1–1.3 entry
 
-Recorded on **25 November 2026**. Machine timestamps in the accompanying
-JSON records use UTC. The exact structured summary is
-[`verification/combined/RESULTS.json`](../verification/combined/RESULTS.json).
+## Palomar mechanical verification
 
-## Outcome
+On 25 November 2026 Palomar's submission verifier recorded a pass for commit
+`971e68d2122c3901a73a6187ce96ffc97d0f0729` with `comparator.json`. Comparator
+matched all three theorems and checked their axiom dependencies. Lean and NanoDa
+accepted the Solution export. The advisory con-ron replay also accepted it,
+with exit code 0. The mechanical report was issued at 10:06:46 UTC.
+[Official run](https://github.com/PalomarRegistry/PalomarSubmission/actions/runs/45563382429)
+and [mechanical report](https://github.com/PalomarRegistry/PalomarSubmission/actions/runs/45563382429/artifacts/15011212386).
+
+## Local preparation on 25 November 2026
+
+The table records the earlier checks used to prepare the distribution archive.
+The machine timestamps in the local records use UTC.
+[Local results](../verification/combined/RESULTS.json).
 
 | Check | Result | Evidence |
 | --- | --- | --- |
@@ -19,8 +29,6 @@ JSON records use UTC. The exact structured summary is
 | Source policy, copied proof preservation and upstream metadata schema | Passed | `source-and-metadata.json`, `source-policy.log` |
 | Whole sandboxed Comparator command | Failed at sandbox startup, exit 1 | `sandbox-default-01.json` and log |
 | Whole pre-export Comparator command | Comparison passed, then sandboxed kernel startup failed, exit 1 | `comparator-from-exports-01.json` and log |
-| Official full Palomar workflow | Not executed for this archive | Manual workflow provided |
-| Advisory con-ron replay | Not executed for this merged export | No acceptance claimed |
 
 All evidence filenames in this table are under `verification/combined/`.
 The build reported 9,355 Lake jobs, including cache replays. It reused exact
@@ -167,7 +175,6 @@ logs and snapshots describe this preparation run; regenerated files form a
 new verification run and should be recorded separately.
 
 The upstream v0.4 metadata schema is included with its provenance for offline
-schema validation. Full Palomar profile and editorial checks remain the
-official workflow's responsibility. The complete manuscript correspondence
+schema validation. The complete manuscript correspondence
 and constant/model qualifications are documented separately in
 `verification/merge/statement-fidelity.md`.

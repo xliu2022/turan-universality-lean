@@ -83,12 +83,16 @@ freshly compiled project files.
 
 ## Verification
 
-The authoritative local summary for this merged entry is
-[`verification/combined/RESULTS.json`](verification/combined/RESULTS.json),
-with an explanation in [docs/VERIFICATION.md](docs/VERIFICATION.md).
-Logs, command exit codes, resource measurements, source snapshots, export
-hashes and import-closure audits accompany it. These are new checks of the
-merged entry; earlier separate-entry passes are not substituted for them.
+On 25 November 2026 Palomar mechanically verified Theorems 1.1–1.3 as
+selected by `comparator.json` at commit `971e68d2122c3901a73a6187ce96ffc97d0f0729`.
+Comparator matched all three statements and checked their axiom dependencies.
+Lean, NanoDa and con-ron accepted the Solution export.
+[Official verification run](https://github.com/PalomarRegistry/PalomarSubmission/actions/runs/45563382429).
+
+During the earlier local preparation, `bubblewrap` could not open a
+`NETLINK_ROUTE` socket. The local build, axiom audits and direct Lean and
+NanoDa replays succeeded. [Local results](verification/combined/RESULTS.json)
+and [verification history](docs/VERIFICATION.md).
 
 The normal sandboxed local check is:
 
@@ -100,11 +104,6 @@ It keeps Comparator's sandbox enabled and registers the toolchain's NanoDa
 checker for the required-kernel phase. It is a local preflight, not a Palomar
 submission. `docs/VERIFICATION.md` also records supported pre-export
 comparison and direct kernel replay, with their precise limitations.
-
-In this preparation environment the normal sandbox launch fails because
-`bubblewrap` cannot open a `NETLINK_ROUTE` socket. The failure log is retained;
-no sandbox option or verification policy was weakened. A full official
-sandboxed verification and registry acceptance are not claimed.
 
 ## Mathematical fidelity
 
@@ -170,6 +169,5 @@ files from Xizhi Liu's `improved-sidorenko-lean` at commit
 `ba6f109bf01436ca15e55fdf5d35dbea85ffd9c9`, retaining their notices. Mathlib and
 other dependencies retain their own licenses.
 
-AI assistance and separate agent review are disclosed in `formalization.yaml`.
-Independent human review, Palomar editorial approval and registry acceptance
-are not represented as completed.
+The pre-submission review was conducted by the agents listed in
+[`formalization.yaml`](formalization.yaml), which also describes AI assistance during development.

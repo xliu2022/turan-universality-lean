@@ -35,7 +35,7 @@ sources:
   type: paper
   location: V4 manuscript dated 8 November 2026; Theorems 1.1, 1.2, and 1.3; source/turan_universality_V4.tex
   relationship: formalizes
-  note: The registered statement surface prepared by this package consists only of Theorems 1.1–1.3. Each retains
+  note: The three declarations selected in comparator.json correspond to Theorems 1.1–1.3. Each retains
     its own existentially quantified witnesses; collecting the three declarations in one configuration does not
     add an assertion that their independently quantified witnesses are identical. The proof development and explicit
     fidelity notes describe the chosen finite encodings and machine presentation. Theorem 1.4, object-language ZFC
@@ -50,14 +50,13 @@ related_formalizations:
     and the exact commit attribution are retained in the source and NOTICE. Its main theorem is a different result.
     Mathlib and its dependencies retain their own licenses.
 status:
-  scope: The combined Theorems 1.1–1.3 project has passed a current full Lake build, recursive statement/definition
-    comparison with no definition exemptions, permitted-axiom validation, and direct Lean and NanoDa replay of the
-    same merged proof export. Public and full-import audits confirm only the three standard axioms for all three
-    roots. Evidence is in verification/combined; mathematical fidelity and merge provenance are in verification/merge.
-    The ordinary sandboxed Comparator and its post-export kernel launch return exit 1 because bubblewrap cannot
-    create a NETLINK_ROUTE socket in this environment. Official full sandboxed verification, advisory con-ron acceptance,
-    human peer review, registry submission and acceptance are not claimed. Theorem 1.4 and whole-paper completion
-    remain outside this entry.
+  scope: >-
+    On 25 November 2026 Palomar mechanically verified all three declarations selected by comparator.json
+    at commit 971e68d2122c3901a73a6187ce96ffc97d0f0729. Lean, NanoDa and con-ron accepted the Solution export.
+    The report for that commit records a pass at https://github.com/PalomarRegistry/PalomarSubmission/actions/runs/45563382429.
+    During the earlier local preparation, bubblewrap could not open a NETLINK_ROUTE socket. The local build,
+    direct kernel replays, axiom audits and sandbox failure are recorded in verification/combined/.
+    The formalization covers Theorems 1.1–1.3.
   sorry_count: 0
   sorry_in_definitions: 0
   axioms:
@@ -137,12 +136,10 @@ review:
   status: agent-reviewed
   reviewers:
   - 'ChatGPT / GPT-6 Astra Pro: separate statement-fidelity, merge and packaging reviewers'
-  notes: Separate assistant agents reviewed the paper-to-statement correspondence, the merged declarations, minimal
-    source closure, metadata and CI. The merged entry was also rebuilt and mechanically checked as recorded in verification/combined/RESULTS.json.
-    Recursive comparison and permitted-axiom validation passed before the preserved sandbox failure at kernel launch;
-    both direct kernels separately accepted the exact merged Solution export. Source and semantic review is documented
-    in verification/merge. This is agent review and local mechanical evidence, not independent human peer review,
-    official full sandboxed verification, Palomar editorial approval or registry acceptance.
+  notes: >-
+    Before submission, the listed agents compared the Lean statements with the manuscript and reviewed the
+    merge, source dependencies, metadata and CI. Their findings are in verification/merge/.
+    The separate Palomar mechanical check of the three declarations is recorded under status.scope.
 alignment:
   namespace: TuranUniversality.Registry
   statements:
